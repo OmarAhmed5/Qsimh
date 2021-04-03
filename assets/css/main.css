@@ -1,0 +1,55 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css);
+@import url(https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css);
+
+/* Arabic-Fonts */
+@font-face {
+  font-family: Kufi;
+  src: url(../fonts/kufi-regular.ttf);
+}
+@font-face {
+  font-family: Kufi;
+  src: url(../fonts/kufi-bold.ttf);
+  font-weight: bold;
+}
+/* Main Values */
+:root {
+  --main-color: #2b7ba5;
+  --main-gradiant: linear-gradient(to bottom, #2b7ba5, #2e8eb9 46%, #32a3d0);
+  --nav-gradiant: linear-gradient(to bottom,rgba(43, 123, 165, 0.56),#75b1ce 12%,#b8e2f3);
+  --main-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.15);
+}
+.main-color {
+  color:  var(--main-color);
+}
+.main-bg {
+  background-color:  var(--main-color);
+}
+* {
+  transition: all 0.3s ease-in-out;
+}
+html {
+  direction: rtl;
+}
+body {
+  font-family: "Kufi";
+  background: #fff;
+  scroll-behavior: smooth;
+  cursor: default;
+  text-align: right;
+}
+img{
+  pointer-events: none;
+}
+/* Scroll Bar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+  background: #a7a7a7;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--main-color);
+}

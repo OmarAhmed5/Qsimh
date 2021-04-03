@@ -1,5 +1,5 @@
 footer .footer-bg {
-  background: url(footer.png) no-repeat;
+  background: url(../img/footer.png) no-repeat;
   background-size: cover;
   height: 340px;
 }
@@ -30,7 +30,7 @@ footer .footer-bg {
   margin-bottom: 25px;
 }
 .footer-content .footer-links ul li a::before {
-  content: url(Polygon.svg);
+  content: url(../img/Polygon.svg);
   position: absolute;
   right: -35px;
   height: 27px;
@@ -38,7 +38,7 @@ footer .footer-bg {
 }
 /* Logo */
 .footer-content .footer-logo {
-  background: url(../main-logo.png) no-repeat;
+  background: url(../img/main-logo.png) no-repeat;
   display: block;
   background-size: contain;
   width: 85%;
@@ -57,7 +57,7 @@ footer .footer-bg {
 }
 
 .footer-content .footer-payments .payments-icons {
-  background: url(payments.png) no-repeat;
+  background: url(../img/payments.png) no-repeat;
   width: 55%;
   height: 125px;
   background-size: contain;
@@ -75,7 +75,7 @@ footer .footer-bg {
   position: relative;
 }
 .footer-content .maroof-div .maroof {
-  background: url(maroof.png) no-repeat;
+  background: url(../img/maroof.png) no-repeat;
   display: block;
   width: 100%;
   height: 70px;
