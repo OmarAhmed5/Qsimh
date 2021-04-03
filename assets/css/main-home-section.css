@@ -1,9 +1,9 @@
 main .top-section {
-  background: url(../img/top-section.png) no-repeat;
-  background-size: contain;
-  height: 120vh;
-  width: 100%;
-  display: block;
+  background-color: #f8f8f8;
+  height: 700px;
+  border-bottom-left-radius: 160px;
+  border-bottom-right-radius: 160px;
+  margin-bottom: 50px;
 }
 .top-section .top-sec-content {
   padding-top: 60px;
@@ -50,6 +50,9 @@ main .top-section {
   width: 100%;
 }
 @media (max-width: 1199px) {
+  main .top-section {
+    height: 600px;
+  }
   .top-section .top-sec-content .top-sec-text h1 {
     font-size: 52px;
     margin-bottom: 50px;
@@ -63,12 +66,9 @@ main .top-section {
 }
 @media (max-width: 992px) {
   main .top-section {
-    background: unset;
-    background-color: #f8f8f8;
     height: 920px;
     border-bottom-right-radius: 115px;
     border-bottom-left-radius: 115px;
-    margin-bottom: 50px;
   }
   .top-section .top-sec-content .top-sec-text h1 {
     text-align: center;
