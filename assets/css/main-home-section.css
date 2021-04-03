@@ -65,7 +65,7 @@ main .top-section {
   main .top-section {
     background: unset;
     background-color: #f8f8f8;
-    height: 160vh;
+    height: 920px;
     border-bottom-right-radius: 115px;
     border-bottom-left-radius: 115px;
     margin-bottom: 50px;
@@ -84,7 +84,7 @@ main .top-section {
 }
 @media (max-width: 767px) {
   main .top-section {
-    height: 140vh;
+    height: 800px;
     margin-bottom: 50px;
   }
   .top-section .top-sec-content .top-sec-text h1 {
