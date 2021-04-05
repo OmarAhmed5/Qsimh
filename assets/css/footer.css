@@ -140,7 +140,7 @@ footer .footer-bg {
 @media (max-width: 767px) {
   footer .footer-bg {
     background: unset;
-    background-color: #121212;
+    background-image: var(--main-gradiant);
     height: auto;
   }
   .footer-content {

@@ -1,0 +1,292 @@
+/* All Sections Margin */
+.home-info-sec,
+.home-most-selling-sec,
+.home-most-recent-sec,
+.home-mobile-app-sec {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
+/* Info Section */
+.owl-theme .owl-dots .owl-dot span {
+  width: 20px;
+  height: 20px;
+  background-color: #2b7ba570;
+}
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background-color: var(--main-color);
+}
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 25px;
+}
+@media (max-width: 567px) {
+  .owl-theme .owl-dots .owl-dot span {
+    width: 15px;
+    height: 15px;
+  }
+}
+.home-info-sec .home-info-slider .item h1 {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 50px;
+  margin: 50px 0px;
+}
+.home-info-sec .home-info-slider .item h4 {
+  line-height: 2.2;
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--main-text-color);
+}
+@media (max-width: 1199px) {
+  .home-info-sec .home-info-slider .item h1 {
+    font-size: 40px;
+  }
+  .home-info-sec .home-info-slider .item h4 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .home-info-sec .home-info-slider .item h1 {
+    font-size: 30px;
+  }
+  .home-info-sec .home-info-slider .item h4 {
+    font-size: 15px;
+  }
+}
+@media (max-width: 567px) {
+  .home-info-sec .home-info-slider .item h1 {
+    font-size: 25px;
+    margin: 20px 0px;
+  }
+}
+
+/* Most Selling Section , Most Recent Section */
+
+.most-text {
+  margin-bottom: 65px;
+}
+.most-text h5 {
+  font-size: 25px;
+  font-weight: bold;
+  color: var(--main-text-color);
+}
+.most-text h5::after {
+  content: "";
+  width: 90px;
+  margin-top: 10px;
+  display: block;
+  border-radius: 2px;
+  border-bottom: 7px solid var(--main-color);
+}
+.most-text a {
+  float: left;
+  color: var(--second-color);
+  font-weight: bold;
+  text-decoration: underline;
+}
+.owl-theme .owl-nav {
+  margin-top: 35px;
+}
+.owl-theme .owl-nav i {
+  color: var(--second-color);
+  font-size: 40px;
+  margin: 0px 15px;
+}
+.owl-theme .owl-nav [class*="owl-"]:hover {
+  color: unset;
+  background: unset;
+}
+.qsimh-card {
+  height: 300px;
+  box-shadow: 0px 0px 5px #00000030;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  margin: 5px;
+  overflow: hidden;
+}
+.qsimh-card .top-card {
+  display: block;
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 220px;
+  overflow: hidden;
+  background-color: #eee;
+  transition: 1s ease-in-out;
+}
+.qsimh-card .top-card:hover {
+  background-position: 0px 100%;
+}
+.qsimh-card .top-card::after {
+  content: "1000 ريال";
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  box-shadow: 0px 0px 5px #00000040;
+  background: #fff;
+  padding: 3px 7px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: var(--main-color);
+  font-size: 14px;
+}
+.qsimh-card .top-card::before {
+  content: "30%";
+  position: absolute;
+  right: 30px;
+  padding: 4px 15px;
+  background: var(--third-color);
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0px 0px 5px #00000040;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.qsimh-card .top-card img {
+  width: 100%;
+  height: auto;
+}
+.qsimh-card .bottom-card {
+  height: 80px;
+  padding: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.qsimh-card .bottom-card h3 {
+  color: var(--main-text-color);
+  font-size: 18px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  font-weight: bold;
+}
+.qsimh-card .bottom-card h6 {
+  font-size: 13px;
+  color: var(--second-text-color);
+}
+.qsimh-card .bottom-card i {
+  font-size: 25px;
+  color: var(--main-color);
+}
+
+.qsimh-card .bottom-card a {
+  position: absolute;
+  top: 30px;
+  left: 25px;
+}
+@media (max-width: 1199px) {
+  .qsimh-card .bottom-card h3 {
+    font-size: 15px;
+    margin-bottom: 13px;
+  }
+  .qsimh-card .bottom-card h6 {
+    font-size: 12px;
+  }
+  .qsimh-card .bottom-card a {
+    left: 15px;
+  }
+  .qsimh-card .top-card::before {
+    right: 20px;
+  }
+}
+@media (max-width: 1000px) {
+  .home-info-sec,
+  .home-most-selling-sec,
+  .home-most-recent-sec {
+    margin-top: 50px;
+  }
+  .qsimh-card .top-card::before {
+    right: 15px;
+  }
+  .qsimh-card .bottom-card h3 {
+    width: 90%;
+  }
+}
+
+/* Mobile App Section */
+
+.home-mobile-app-sec {
+  margin-top: 70px;
+  margin-bottom: 70px;
+  background: url(../img/map.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.home-mobile-app-sec .mobile-img img {
+  width: 100%;
+}
+.home-mobile-app-sec .mobile-text h2 {
+  font-size: 65px;
+  font-weight: bold;
+  color: var(--main-color);
+  margin-bottom: 40px;
+}
+
+.home-mobile-app-sec .mobile-text h6 {
+  color: var(--main-text-color);
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 3;
+}
+.home-mobile-app-sec .mobile-text .android {
+  display: inline-block;
+  width: 45%;
+}
+.home-mobile-app-sec .mobile-text .ios {
+  display: inline-block;
+  width: 40%;
+}
+.home-mobile-app-sec .mobile-text a img {
+  width: 100%;
+}
+@media (max-width: 1199px) {
+  .home-mobile-app-sec .mobile-text h2 {
+    font-size: 50px;
+  }
+  .home-mobile-app-sec .mobile-text h6 {
+    font-size: 25px;
+  }
+}
+@media (max-width: 992px) {
+  .home-mobile-app-sec {
+    background-position: top;
+  }
+  .mobile-text {
+    margin-bottom: 30px;
+  }
+  .home-mobile-app-sec .mobile-text h2 {
+    font-size: 40px;
+  }
+  .home-mobile-app-sec .mobile-text h6 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .home-mobile-app-sec {
+    background-position: top;
+  }
+  .mobile-text {
+    margin-bottom: 30px;
+  }
+
+  .home-mobile-app-sec .mobile-text h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .home-mobile-app-sec .mobile-text h6 {
+    text-align: center;
+    font-size: 15px;
+  }
+  .home-mobile-app-sec .mobile-text .android {
+    width: 50%;
+  }
+  .home-mobile-app-sec .mobile-text .ios {
+    width: 46%;
+  }
+}

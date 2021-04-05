@@ -14,6 +14,10 @@ main .top-section {
   font-weight: bold;
   margin-bottom: 60px;
   line-height: 1.8;
+  color: var(--main-text-color);
+}
+.top-section .top-sec-content .top-sec-text h1 span{
+  color: var(--main-color);
 }
 .top-section .top-sec-content .top-sec-text a {
   width: 40%;
@@ -54,7 +58,7 @@ main .top-section {
     height: 600px;
   }
   .top-section .top-sec-content .top-sec-text h1 {
-    font-size: 52px;
+    font-size: 50px;
     margin-bottom: 50px;
   }
   .top-section .top-sec-content .top-sec-text a {
