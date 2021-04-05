@@ -42,7 +42,12 @@ header {
 }
 @media (max-width: 992px) {
   .navbar-collapse {
-    background: linear-gradient(to top,rgba(43, 123, 165, 1),#75b1ce 12%,#b8e2f3);
+    background: linear-gradient(
+      to top,
+      rgba(43, 123, 165, 1),
+      #75b1ce 12%,
+      #b8e2f3
+    );
     padding: 15px;
     top: 7px;
     position: relative;
