@@ -124,6 +124,7 @@ header {
   }
   .navbar-collapse .navbar-nav .nav-item .nav-link.active::before {
     border: 1px solid var(--main-text-color);
+    background-color: var(--main-text-color);
   }
   .nav-btn {
     margin-top: 10px;
