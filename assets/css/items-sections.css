@@ -119,14 +119,14 @@ main .top-section {
 }
 @media (max-width: 576px) {
   .fillter {
-    height: 95px;
+    height: 135px;
   }
   .fillter .fillter-btn {
     width: 50%;
   }
   .fillter .fillter-btn .dropdown-toggle {
     font-size: 14px;
-    height: 35px;
+    height: 55px;
     margin-top: 8px;
   }
   .city-btn .dropdown-toggle,
@@ -247,5 +247,13 @@ main .top-section {
   }
   .qsimh-card .bottom-card h3 {
     width: 90%;
+  }
+}
+@media (max-width: 767px) {
+  .qsimh-card {
+    height: 330px;
+  }
+  .qsimh-card .top-card {
+    height: 250px;
   }
 }

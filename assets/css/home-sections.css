@@ -207,7 +207,14 @@
     width: 90%;
   }
 }
-
+@media (max-width:767px) {
+  .qsimh-card{
+    height: 330px;
+  }
+  .qsimh-card .top-card{
+    height: 250px;
+  }
+}
 /* Mobile App Section */
 
 .home-mobile-app-sec {
