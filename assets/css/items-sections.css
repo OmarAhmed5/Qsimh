@@ -152,6 +152,25 @@ main .top-section {
   margin: 5px;
   overflow: hidden;
 }
+
+/* Start Hover Effect in Qsimh Card */
+
+.qsimh-card:hover {
+  filter: drop-shadow(0px 0px 5px #00000035);
+}
+.qsimh-card:hover.qsimh-card .top-card::after,
+.qsimh-card:hover.qsimh-card .bottom-card {
+  background-image: var(--main-gradiant);
+  color: #fff;
+}
+.qsimh-card:hover.qsimh-card .bottom-card h3,
+.qsimh-card:hover.qsimh-card .bottom-card h6,
+.qsimh-card:hover.qsimh-card .bottom-card i {
+  color: #fff;
+}
+
+/* End Hover Effect in Qsimh Card */
+
 .qsimh-card .top-card {
   display: block;
   position: relative;
@@ -177,6 +196,7 @@ main .top-section {
   font-weight: bold;
   color: var(--main-color);
   font-size: 14px;
+  transition: 0.3s ease-in-out;
 }
 .qsimh-card .top-card::before {
   content: "30%";
@@ -200,6 +220,7 @@ main .top-section {
   padding: 10px;
   overflow: hidden;
   position: relative;
+  transition: 0.3s ease-in-out;
 }
 .qsimh-card .bottom-card h3 {
   color: var(--main-text-color);
