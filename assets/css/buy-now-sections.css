@@ -1,0 +1,233 @@
+/* Title Sec */
+
+.title-sec {
+  position: relative;
+  margin: 50px auto;
+}
+.title-sec h1 {
+  font-size: 80px;
+  text-align: center;
+  color: var(--third-text-color);
+  opacity: 0.3;
+}
+.title-sec h4 {
+  position: absolute;
+  font-size: 50px;
+  color: var(--main-text-color);
+  bottom: 5px;
+  transform: translateX(50%);
+  right: 50%;
+  opacity: 0.9;
+}
+.title-sec hr {
+  position: relative;
+  width: 30%;
+  bottom: -30px;
+  border: 2px solid #eee;
+  background-color: #eee;
+  border-radius: 3px;
+}
+
+@media (max-width: 767px) {
+  .title-sec h1 {
+    font-size: 55px;
+  }
+  .title-sec h4 {
+    font-size: 35px;
+    bottom: -10px;
+  }
+  .title-sec hr {
+    margin: 0px auto;
+  }
+}
+@media (max-width: 576px) {
+  .title-sec h1 {
+    font-size: 35px;
+  }
+  .title-sec h4 {
+    font-size: 22px;
+  }
+}
+
+/* Header My Account Button */
+header {
+  background-color: #fff !important;
+}
+.navbar .nav-btn .my-acc {
+  background: unset !important;
+  border: unset;
+  margin: unset;
+  padding: unset;
+  outline: unset;
+  box-shadow: unset !important;
+  font-size: 16px;
+  font-weight: bold;
+  filter: drop-shadow(0px 0px 5px #00000035);
+}
+.navbar .nav-btn .my-acc img {
+  width: 30px;
+  height: 30px;
+}
+.navbar .dropdown-item {
+  font-size: 12px;
+  padding: 1px 6px;
+}
+.navbar .dropdown-item img {
+  width: 20px;
+  height: 20px;
+  margin: 3px 0px;
+}
+@media (max-width: 1199px) {
+  .navbar .nav-btn .my-acc {
+    font-size: 14px;
+  }
+  .dropdown-menu {
+    min-width: unset;
+  }
+}
+@media (max-width: 992px) {
+  .navbar .nav-btn .my-acc {
+    font-size: 14px;
+    color: var(--second-text-color) !important;
+  }
+  .dropdown-menu {
+    padding-right: 0px;
+    padding-left: 30px;
+  }
+}
+
+/* Item Card */
+.selling-item-sec {
+  margin: 60px auto;
+}
+
+.selling-item-sec .selling-item-card {
+  overflow: hidden;
+  position: relative;
+  box-shadow: var(--main-box-shadow);
+  border-radius: 5px;
+  padding: 10px 0px;
+  text-decoration: none;
+}
+.selling-item-sec .selling-item-card .card-right {
+  position: relative;
+  height: 115px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.selling-item-sec .selling-item-card .card-right img {
+  border-radius: 5px;
+  width: 100%;
+  height: auto;
+}
+.selling-item-sec .selling-item-card .card-right span {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  padding: 5px 7px;
+  background: var(--third-color);
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  box-shadow: 0px 0px 5px #00000040;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  z-index: 99;
+}
+.selling-item-sec .selling-item-card .card-left p {
+  font-size: 16px;
+  margin: 3px 0px;
+  display: block;
+  color: var(--main-text-color);
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.selling-item-sec .selling-item-card .card-left p i {
+  color: var(--main-color);
+}
+.fa-user {
+  margin: 0px 2px 0px 4px;
+}
+.selling-item-sec .selling-item-card .card-left .price-before {
+  text-decoration: line-through;
+}
+@media (max-width: 576px) {
+  .selling-item-sec .card-left {
+    padding-top: 10px;
+  }
+}
+
+hr {
+  width: 80%;
+}
+
+/* invoice */
+.invoice-sec {
+  margin: 50px 0px;
+}
+.invoice-sec .invoice-card {
+  box-shadow: var(--main-box-shadow);
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.invoice-sec .invoice-card p {
+  color: var(--main-text-color);
+  margin: 0;
+  line-height: 2.5;
+}
+.invoice-sec .invoice-card .price-title {
+  color: var(--main-color);
+}
+.invoice-sec .invoice-card .total-price {
+  color: var(--main-color);
+  font-weight: bold;
+}
+.invoice-sec .invoice-card .total-price-value {
+  font-weight: bold;
+}
+.invoice-sec .invoice-card .notify {
+  color: var(--main-color);
+  font-size: 14px;
+  text-align: right;
+  padding-right: 20px;
+}
+.invoice-sec .invoice-card .buy-now {
+  background: var(--main-gradiant);
+  color: #fff;
+  font-weight: bold;
+  padding: 5px 20px;
+  font-size: 14px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px #00000050;
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .invoice-sec .invoice-card .notify {
+    padding: 0;
+    font-size: 11px;
+  }
+  .invoice-sec .invoice-card .buy-now {
+    padding: 5px 7px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 576px) {
+  .invoice-sec .invoice-card p {
+    font-size: 13px;
+  }
+  .invoice-sec .invoice-card .notify {
+    padding: 0;
+    font-size: 9px;
+    text-align: center;
+  }
+  .invoice-sec .invoice-card .buy-now {
+    padding: 7px;
+    display: block;
+    font-size: 13px;
+    margin-top: 20px;
+  }
+}

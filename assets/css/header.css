@@ -47,7 +47,7 @@ header {
     padding: 15px;
     top: 7px;
     position: relative;
-    z-index: 99;
+    z-index: 99999999;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
   }
@@ -137,3 +137,51 @@ header {
   }
 }
 /* End Navbar */
+
+
+/* Header My Account Button */
+/* header {
+  background-color: #fff !important;
+}
+.navbar .nav-btn .my-acc {
+  background: unset !important;
+  border: unset;
+  margin: unset;
+  padding: unset;
+  outline: unset;
+  box-shadow: unset !important;
+  font-size: 16px;
+  font-weight: bold;
+  filter: drop-shadow(0px 0px 5px #00000035);
+}
+.navbar .nav-btn .my-acc img {
+  width: 30px;
+  height: 30px;
+}
+.navbar .dropdown-item {
+  font-size: 12px;
+  padding: 1px 6px;
+}
+.navbar .dropdown-item img {
+  width: 20px;
+  height: 20px;
+  margin: 3px 0px;
+}
+@media (max-width: 1199px) {
+  .navbar .nav-btn .my-acc {
+    font-size: 14px;
+  }
+  .dropdown-menu {
+    min-width: unset;
+  }
+}
+@media (max-width: 992px) {
+  .navbar .nav-btn .my-acc {
+    font-size: 14px;
+    color: var(--second-text-color) !important;
+  }
+  .dropdown-menu {
+    padding-right: 0px;
+    padding-left: 30px;
+  }
+} */

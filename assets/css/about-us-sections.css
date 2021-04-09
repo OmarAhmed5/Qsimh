@@ -1,0 +1,124 @@
+.about-info-sec,
+.goals-sec {
+  margin: 65px 0px;
+}
+.about-info-sec .about-text h2 {
+  color: var(--main-color);
+  font-weight: bold;
+  font-size: 45px;
+  text-align: right;
+  margin-bottom: 30px;
+  margin-top: 15px;
+}
+.about-info-sec .about-text h6 {
+  font-size: 25px;
+  color: var(--main-text-color);
+  font-weight: bold;
+  line-height: 2.5;
+  text-align: right;
+}
+.about-info-sec .about-img img {
+  width: 100%;
+}
+.goals-sec {
+  background: url(../img/map.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 500px;
+}
+.goals-sec .vision img,
+.goals-sec .mission img {
+  width: 35%;
+  display: block;
+  margin: auto;
+}
+.goals-sec .vision h4,
+.goals-sec .mission h4 {
+  font-size: 35px;
+  color: var(--main-text-color);
+  font-weight: bold;
+  text-align: center;
+  margin: 30px auto;
+}
+.goals-sec .vision p,
+.goals-sec .mission p {
+  font-size: 25px;
+  color: var(--second-text-color);
+  text-align: center;
+  line-height: 2;
+}
+@media (max-width: 1199px) {
+  .about-info-sec .about-text h2 {
+    font-size: 40px;
+  }
+  .about-info-sec .about-text h6 {
+    text-align: center;
+    font-size: 22px;
+  }
+}
+@media (max-width: 992px) {
+  .goals-sec {
+    background-size: cover;
+    height: auto;
+  }
+  .about-info-sec .about-text h2 {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .about-info-sec .about-text h6 {
+    font-size: 25px;
+    margin-bottom: 60px;
+  }
+  .goals-sec .vision img,
+  .goals-sec .mission img {
+    width: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .goals-sec {
+    margin: 100px 0px;
+  }
+  .about-info-sec .about-text h2 {
+    font-size: 35px;
+  }
+  .goals-sec .vision img,
+  .goals-sec .mission img {
+    width: 35%;
+  }
+  .goals-sec .vision h4,
+  .goals-sec .mission h4 {
+    font-size: 30px;
+    margin: 20px auto;
+  }
+  .vision {
+    margin-bottom: 85px;
+  }
+}
+@media (max-width: 450px) {
+  .about-info-sec,
+  .goals-sec {
+    margin: 0px;
+  }
+  .goals-sec {
+    margin: 100px 0px;
+  }
+  .about-info-sec .about-text h2 {
+    font-size: 25px;
+  }
+  .about-info-sec .about-text h6 {
+    font-size: 20px;
+    margin-bottom: 50px;
+  }
+  .vision {
+    margin-bottom: 50px;
+  }
+  .goals-sec .vision h4,
+  .goals-sec .mission h4 {
+    font-size: 25px;
+    margin: 20px auto;
+  }
+  .goals-sec .vision p,
+  .goals-sec .mission p {
+    font-size: 20px;
+  }
+}

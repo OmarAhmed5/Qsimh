@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قسيمة | التسجيل للتجار</title>
+
+    <link rel="shortcut icon" href="../assets/img/favicon.svg" type="image/x-icon">
+
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+
+    <link rel="stylesheet" href="../assets/css/sign-up-company-sections.css">
+
+    <link rel="stylesheet" href="../assets/css/footer.css">
+
+</head>
+
+<body>
+
+    <main>
+
+        <!-- Title Section For Buy Now Page -->
+
+        <div class="title-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+
+                        <h1>
+                            التسجيل للتجار
+                        </h1>
+                        <h4>
+                            التسجيل للتجار
+                        </h4>
+                        <hr>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Login Form Section For Login Page -->
+
+        <div class="form-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-2"></div>
+                    <div class="col-lg-8">
+
+                        <form action="post">
+
+                            <div class='row'>
+
+                                <div class="col-lg-6">
+                                    <div class="box">
+                                        <label for="name">اسم الشركة</label>
+                                        <input name="company-name" class="form-name" placeholder="مثال : علي"
+                                            type="text" required>
+                                    </div>
+                                    <div class="box">
+                                        <label for="">العنوان</label>
+                                        <input name="company-addres" class="form-addres"
+                                            placeholder="مثال : شارع الامام علي" type="text" required>
+                                    </div>
+                                    <div class="box">
+                                        <label for="">رقم الهاتف</label>
+                                        <input name="company-number" placeholder="+966123456789" type="number" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6">
+                                    <div class="box">
+                                        <label for="">البريد الالكتروني</label>
+                                        <input name="company-email" placeholder="email@gmail.com" type="email" required>
+                                    </div>
+                                    <div class="box">
+                                        <label for="">المدينة</label>
+                                        <input name="company-city" class="form-city" placeholder="مثال : الرياض"
+                                            type="text" required>
+                                    </div>
+                                    <div class="box">
+                                        <label for="">كلمة المرور</label>
+                                        <input name="company-password" placeholder="********" type="password" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <div class="box">
+
+                                        <input name="company-location" class="location" type="button"
+                                            id="kasema_location" value="أضغط لتحديد موقعك" />
+                                        <div id="map"></div>
+                                        <input type="hidden" name="kasema_latitude" id="kasema_latitude">
+                                        <input type="hidden" name="kasema_longitude" id="kasema_longitude">
+                                        <input type="hidden" name="kasema_zoom" id="kasema_zoom">
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-3"></div>
+
+                                <div class="col-lg-6 form-bottom">
+
+                                    <input type="checkbox" name="terms" id="terms" required>
+                                    <label class="checkbox-label" for="terms">موافق علي <a
+                                            href="terms-conditions.html">الشروط و
+                                            الاحكام</a></label>
+
+                                    <button type="submit">التسجيل</button>
+
+                                    <hr>
+
+                                    <div class="row">
+
+                                        <div class="col-lg-6 have-acc">
+                                            <h6> هل لديك حساب ؟ </h6>
+                                            <a class="sign-up-btn" href="sign-in.html"> تسجيل الدخول </a>
+                                        </div>
+
+                                        <div class="col-lg-6 signup-company">
+                                            <h6> لست تاجر ؟ </h6>
+                                            <a class="sign-up-btn" href="sign-up-customer.html"> التسجيل للعملاء </a>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                                <div class="col-lg-3"></div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+                    <div class="col-lg-2"></div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+
+    <!-- Map -->
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcz6JBbB9DtEGNR1NPxob3jrNADfrURnE&callback=initMap"> </script>
+    <script>
+
+        // Active Map
+
+        window.onload = function () {
+            var latlng = new google.maps.LatLng(24.3343848, 42.86837);
+            var map = new google.maps.Map(document.getElementById('map'), {
+                center: latlng,
+                zoom: 5,
+                mapTypeId: google.maps.MapTypeId.ROADMAP
+            });
+            var marker = new google.maps.Marker({
+                position: latlng,
+                map: map,
+                title: 'اسحب و افلت في موقعك',
+                draggable: true
+            });
+            google.maps.event.addListener(marker, 'dragend', function (a) {
+                console.log(a);
+                $('#kasema_latitude').val(a.latLng.lat().toFixed(4));
+                $('#kasema_longitude').val(a.latLng.lng().toFixed(4));
+
+            });
+            google.maps.event.addListener(map, 'zoom_changed', function () {
+                $('#kasema_zoom').val(map.getZoom());
+
+            });
+
+        };
+
+        $("#kasema_location").on('click', function () {
+
+            if (navigator.geolocation)
+                navigator.geolocation.getCurrentPosition(function (position) {
+
+                    $('#kasema_latitude').val(position.coords.latitude.toFixed(4));
+                    $('#kasema_longitude').val(position.coords.longitude.toFixed(4));
+
+                    var latlng = new google.maps.LatLng(position.coords.latitude.toFixed(4), position.coords
+                        .longitude.toFixed(4));
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        center: latlng,
+                        zoom: 16,
+                        mapTypeId: google.maps.MapTypeId.ROADMAP,
+                    });
+                    var marker = new google.maps.Marker({
+                        position: latlng,
+                        map: map,
+                        title: 'Set lat/lon values for this property',
+                        draggable: true
+                    });
+                    google.maps.event.addListener(marker, 'dragend', function (a) {
+                        console.log(a);
+                        $('#kasema_latitude').val(a.latLng.lat().toFixed(4));
+                        $('#kasema_longitude').val(a.latLng.lng().toFixed(4));
+
+                    });
+                    google.maps.event.addListener(map, 'zoom_changed', function () {
+                        $('#kasema_zoom').val(map.getZoom());
+
+                    });
+
+                });
+        });
+    </script>
+
+</body>
+
+</html>

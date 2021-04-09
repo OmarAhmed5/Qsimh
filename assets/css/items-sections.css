@@ -151,14 +151,41 @@ main .top-section {
   border-bottom-right-radius: 15px;
   margin: 5px;
   overflow: hidden;
+  position: relative;
 }
-
+.qsimh-card .price {
+  position: absolute;
+  top: 10px;
+  left: 15px;
+  box-shadow: 0px 0px 5px #00000040;
+  background: #fff;
+  padding: 3px 7px;
+  border-radius: 5px;
+  font-weight: bold;
+  color: var(--main-color);
+  font-size: 14px;
+  transition: 0.3s ease-in-out;
+  z-index: 99;
+}
+.qsimh-card .discount {
+  position: absolute;
+  right: 30px;
+  padding: 4px 15px;
+  background: var(--third-color);
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  box-shadow: 0px 0px 5px #00000040;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 99;
+}
 /* Start Hover Effect in Qsimh Card */
 
 .qsimh-card:hover {
   filter: drop-shadow(0px 0px 5px #00000035);
 }
-.qsimh-card:hover.qsimh-card .top-card::after,
+.qsimh-card:hover.qsimh-card .price,
 .qsimh-card:hover.qsimh-card .bottom-card {
   background-image: var(--main-gradiant);
   color: #fff;
@@ -183,33 +210,6 @@ main .top-section {
 }
 .qsimh-card .top-card:hover {
   background-position: 0px 100%;
-}
-.qsimh-card .top-card::after {
-  content: "1000 ريال";
-  position: absolute;
-  top: 10px;
-  left: 15px;
-  box-shadow: 0px 0px 5px #00000040;
-  background: #fff;
-  padding: 3px 7px;
-  border-radius: 5px;
-  font-weight: bold;
-  color: var(--main-color);
-  font-size: 14px;
-  transition: 0.3s ease-in-out;
-}
-.qsimh-card .top-card::before {
-  content: "30%";
-  position: absolute;
-  right: 30px;
-  padding: 4px 15px;
-  background: var(--third-color);
-  color: #fff;
-  font-size: 14px;
-  font-weight: bold;
-  box-shadow: 0px 0px 5px #00000040;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
 }
 .qsimh-card .top-card img {
   width: 100%;
@@ -258,12 +258,12 @@ main .top-section {
   .qsimh-card .bottom-card a {
     left: 15px;
   }
-  .qsimh-card .top-card::before {
+  .qsimh-card .discount {
     right: 20px;
   }
 }
 @media (max-width: 1000px) {
-  .qsimh-card .top-card::before {
+  .qsimh-card .discount {
     right: 15px;
   }
   .qsimh-card .bottom-card h3 {
