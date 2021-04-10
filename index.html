@@ -8,18 +8,7 @@
     <title>قسيمة | الرئيسية</title>
 
     <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
-
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/main-section.css">
-
-    <link rel="stylesheet" href="assets/css/home-sections.css">
-
-    <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 
 <body>
@@ -521,96 +510,11 @@
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
-
+    <script src="assets/js/main.js"></script>
 
     <script>
 
-        // Active Link For Nav
 
-        $('.navbar li a').click(function () {
-            $(this).addClass('active').parent().siblings().find('a').removeClass('active');
-        });
-
-
-        // Owl slider sections
-
-        $(document).ready(function () {
-            $('.home-info-slider').owlCarousel({
-                loop: true,
-                rtl: true,
-                lazyLoad: true,
-                items: 1,
-                autoplay: true,
-                autoplayTimeout: 3000,
-                autoplayHoverPause: true
-            })
-        });
-
-        $(document).ready(function () {
-            $('.home-most-selling-slider').owlCarousel({
-                loop: true,
-                margin: 20,
-                rtl: true,
-                lazyLoad: true,
-                dots: false,
-                nav: true,
-                navText: ["<i class='fas fa-long-arrow-alt-right'></i>", "<i class='fas fa-long-arrow-alt-left'></i>"],
-                autoplay: true,
-                autoplayTimeout: 4000,
-                autoplayHoverPause: true,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: false
-                    },
-                    600: {
-                        items: 2,
-                        margin: 10
-                    },
-                    1000: {
-                        items: 3
-                    }
-                }
-            })
-        });
-
-        $(document).ready(function () {
-            $('.home-most-recent-slider').owlCarousel({
-                loop: true,
-                margin: 20,
-                rtl: true,
-                lazyLoad: true,
-                dots: false,
-                nav: true,
-                navText: ["<i class='fas fa-long-arrow-alt-right'></i>", "<i class='fas fa-long-arrow-alt-left'></i>"],
-                autoplay: true,
-                autoplayTimeout: 5000,
-                autoplayHoverPause: true,
-                responsiveClass: true,
-                responsive: {
-                    0: {
-                        items: 1,
-                        nav: false
-                    },
-                    600: {
-                        items: 2,
-                        margin: 10
-                    },
-                    1000: {
-                        items: 3
-                    }
-                }
-            })
-        });
-
-        // Fav Icon On Hover
-
-        $(document).ready(function () {
-            $(".far").hover(function () {
-                $(this).toggleClass("fas");
-            });
-        });
     </script>
 
 </body>

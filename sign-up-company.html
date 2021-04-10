@@ -249,80 +249,9 @@
 
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcz6JBbB9DtEGNR1NPxob3jrNADfrURnE&callback=initMap"> </script>
-    <script>
-        // Active Class For Links
-
-        $('.navbar li a').click(function () {
-            $(this).addClass('active').parent().siblings().find('a').removeClass('active');
-        });
-
-
-    </script>
-
-    <script>
-        window.onload = function () {
-            var latlng = new google.maps.LatLng(24.3343848, 42.86837);
-            var map = new google.maps.Map(document.getElementById('map'), {
-                center: latlng,
-                zoom: 5,
-                mapTypeId: google.maps.MapTypeId.ROADMAP
-            });
-            var marker = new google.maps.Marker({
-                position: latlng,
-                map: map,
-                title: 'اسحب و افلت في موقعك',
-                draggable: true
-            });
-            google.maps.event.addListener(marker, 'dragend', function (a) {
-                console.log(a);
-                $('#kasema_latitude').val(a.latLng.lat().toFixed(4));
-                $('#kasema_longitude').val(a.latLng.lng().toFixed(4));
-
-            });
-            google.maps.event.addListener(map, 'zoom_changed', function () {
-                $('#kasema_zoom').val(map.getZoom());
-
-            });
-
-        };
-
-        $("#kasema_location").on('click', function () {
-
-            if (navigator.geolocation)
-                navigator.geolocation.getCurrentPosition(function (position) {
-
-                    $('#kasema_latitude').val(position.coords.latitude.toFixed(4));
-                    $('#kasema_longitude').val(position.coords.longitude.toFixed(4));
-
-                    var latlng = new google.maps.LatLng(position.coords.latitude.toFixed(4), position.coords
-                        .longitude.toFixed(4));
-                    var map = new google.maps.Map(document.getElementById('map'), {
-                        center: latlng,
-                        zoom: 16,
-                        mapTypeId: google.maps.MapTypeId.ROADMAP,
-                    });
-                    var marker = new google.maps.Marker({
-                        position: latlng,
-                        map: map,
-                        title: 'Set lat/lon values for this property',
-                        draggable: true
-                    });
-                    google.maps.event.addListener(marker, 'dragend', function (a) {
-                        console.log(a);
-                        $('#kasema_latitude').val(a.latLng.lat().toFixed(4));
-                        $('#kasema_longitude').val(a.latLng.lng().toFixed(4));
-
-                    });
-                    google.maps.event.addListener(map, 'zoom_changed', function () {
-                        $('#kasema_zoom').val(map.getZoom());
-
-                    });
-
-                });
-        });
-    </script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcz6JBbB9DtEGNR1NPxob3jrNADfrURnE&callback=initMap"> </script>
 
 </body>
 
