@@ -48,7 +48,7 @@ $(document).ready(function () {
     })
 });
 
-// Item Images Slider
+// ! Item Images Slider
 
 $(document).ready(function () {
     $('.item-img-slider').owlCarousel({
@@ -76,6 +76,16 @@ $(document).ready(function () {
     });
 });
 
+// ! Search
+
+$(document).ready(function () {
+    $("#marketer-search").on("keyup", function () {
+        var value = $(this).val().toLowerCase();
+        $(".marketer").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+    });
+});
 
 // ! Active Map
 

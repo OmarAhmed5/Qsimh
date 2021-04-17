@@ -14,7 +14,7 @@
 
 <body>
 
-    <main>
+    <main class="signup-customer-page">
 
         <!-- Title Section For Buy Now Page -->
 
@@ -45,20 +45,19 @@
                     <div class="col-lg-2"></div>
                     <div class="col-lg-8">
 
-                        <form action="post">
+                        <form class="was-validated" action="post">
 
                             <div class='row'>
-
 
                                 <div class="col-lg-6">
                                     <div class="box">
                                         <label for="name">الاسم</label>
-                                        <input name="customer-name" class="form-name" placeholder="مثال : علي"
+                                        <input name="customer-name" class="form-name is-invalid form-control" placeholder="مثال : علي"
                                             type="text" required>
                                     </div>
                                     <div class="box">
                                         <label for="">رقم الهاتف</label>
-                                        <input name="customer-number" placeholder="+966123456789" type="number"
+                                        <input name="customer-number" class="is-invalid form-control" placeholder="+966123456789" type="number"
                                             required>
                                     </div>
                                 </div>
@@ -66,12 +65,11 @@
                                 <div class="col-lg-6">
                                     <div class="box">
                                         <label for="">البريد الالكتروني</label>
-                                        <input name="customer-email" placeholder="email@gmail.com" type="email"
-                                            required>
+                                        <input name="customer-email" class="is-invalid form-control" placeholder="email@gmail.com" type="email" required>
                                     </div>
                                     <div class="box">
                                         <label for="">كلمة المرور</label>
-                                        <input name="customer-password" placeholder="********" type="password" required>
+                                        <input name="customer-password" class="is-invalid form-control" minlength="8" placeholder="********" type="password" required>
                                     </div>
                                 </div>
 

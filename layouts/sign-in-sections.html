@@ -14,7 +14,7 @@
 
 <body>
 
-    <main>
+    <main class="signin-page">
 
         <!-- Title Section For Buy Now Page -->
 
@@ -42,7 +42,7 @@
         <div class="form-sec">
             <div class="container">
 
-                <form action="post">
+                <form class="was-validated" action="post">
 
                     <div class="row">
                         <div class="col-lg-4"></div>
@@ -51,14 +51,14 @@
                             <div class="box">
 
                                 <label for="">البريد الالكتروني</label>
-                                <input name="email" placeholder="email@gmail.com" type="email" required>
+                                <input class="is-invalid form-control" name="email" placeholder="email@gmail.com" type="email" required>
 
                             </div>
 
                             <div class="box">
 
                                 <label for="">كلمة المرور</label>
-                                <input name="password" placeholder="********" type="password" required>
+                                <input class="is-invalid form-control" minlength="8" name="password" placeholder="********" type="password" required>
 
                             </div>
 

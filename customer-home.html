@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قسيمة | اشتري الان</title>
+
+    <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+
+                <!--Start logo -->
+                <a class="navbar-brand" href="index.html">
+                    <div class="nav-logo"><img loading="lazy" src="assets/img/main-logo.png" alt="image"></div>
+                </a>
+                <!--End Logo -->
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav mx-auto my-2 my-lg-0 p-0 navbar-nav-scroll">
+
+                        <!-- Start Nav Links -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="marketer.html">المسوقين</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about-us.html">من نحن</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-us.html">تواصل معنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="terms-conditions.html">الشروط و الاحكام</a>
+                        </li>
+                        <!-- End Nav Links -->
+
+                    </ul>
+
+                    <!-- Start My Account Button -->
+
+                    <div class="nav-btn">
+
+                        <div class="btn-group">
+                            <button type="button" class="my-acc btn btn-secondary dropdown-toggle"
+                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span><img
+                                        src="assets/img/my-acc.svg" alt=""></span> حسابي </button>
+                            <div class="dropdown-menu dropdown-menu-right text-right">
+                                <button class="dropdown-item" type="button"><span><img src="assets/img/info.svg"
+                                            alt=""></span> البيانات</button>
+                                <button class="dropdown-item" type="button"><span><img src="assets/img/money.svg"
+                                            alt=""></span> التعاملات المالية</button>
+                                <button class="dropdown-item" type="button"><span><img src="assets/img/fav.svg"
+                                            alt=""></span> المفضلة</button>
+                                <button class="dropdown-item" type="button"><span><img src="assets/img/logout.svg"
+                                            alt=""></span> تسجيل الخروج</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- End My Account Button -->
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="customer-home">
+
+        <!-- deals tab For Buy Now Page -->
+
+        <div class="tabs-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="info-tab" data-toggle="pill" href="#info-tab-content" role="tab"
+                                    aria-controls="info" aria-selected="true">البيانات الشخصية</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="deals-tab" data-toggle="pill" href="#deals-tab-content"
+                                    role="tab" aria-controls="deals" aria-selected="false">التعاملات المالية</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="favourite-tab" data-toggle="pill" href="#favourite-tab-content"
+                                    role="tab" aria-controls="favourite" aria-selected="false">المفضلة</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="pills-tabContent">
+
+                            <!-- Info -->
+                            <div class="info-tab tab-pane fade" id="info-tab-content" role="tabpanel"
+                                aria-labelledby="info-tab">
+
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-2"></div>
+                                        <div class="col-lg-8">
+                                            <form class="was-validated" action="post">
+                                                <div class='row'>
+                                                    <div class="col-lg-6">
+                                                        <div class="box">
+                                                            <label for="customer-name">الاسم</label>
+                                                            <input name="customer-name"
+                                                                class="form-rtl is-invalid form-control"
+                                                                placeholder="مثال : علي" type="text" required>
+                                                        </div>
+                                                        <div class="box">
+                                                            <label for="customer-city">المدينة</label>
+                                                            <input name="customer-city"
+                                                                class="form-rtl is-invalid form-control"
+                                                                placeholder="مثال : الرياض" type="text" required>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-6">
+                                                        <div class="box">
+                                                            <label for="customer-email">البريد الالكتروني</label>
+                                                            <input name="customer-email" class="is-invalid form-control"
+                                                                placeholder="email@gmail.com" type="email" required>
+                                                        </div>
+                                                        <div class="box">
+                                                            <label for="customer-number">رقم الهاتف</label>
+                                                            <input name="customer-number"
+                                                                class="is-invalid form-control"
+                                                                placeholder="+966123456789" type="number" required>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-6">
+                                                        <div class="box box-bottom">
+                                                            <label for="customer-password">كلمة المرور</label>
+                                                            <input name="customer-password" minlength="8"
+                                                                class="is-invalid form-control" placeholder="********"
+                                                                type="password" required>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-6">
+                                                        <div class="box box-bottom box-bottom-sm">
+                                                            <label for="customer-confirem-password">تأكيد كلمة
+                                                                المرور</label>
+                                                            <input name="customer-confirem-password" minlength="8"
+                                                                class="is-invalid form-control" placeholder="********"
+                                                                type="password" required>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-lg-3"></div>
+
+                                                    <div class="col-lg-6 form-bottom">
+
+                                                        <button type="submit">حفظ</button>
+
+                                                    </div>
+
+                                                    <div class="col-lg-3"></div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col-lg-2"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Deals -->
+                            <div class="deals-tab tab-pane fade show active" id="deals-tab-content" role="tabpanel"
+                                aria-labelledby="deals-tab">
+
+                                <div class="deals-title">
+                                    <h5>اجمالي المعاملات المالية</h5>
+                                </div>
+
+                                <div class="deals-total">
+                                    <p>7000 ريال <span><img src="assets/img/price.svg"></span></p>
+                                </div>
+
+                                <hr>
+
+                                <div class="deals-table table-responsive">
+
+                                    <table class="table table-hover">
+                                        <thead class="thead-color">
+                                            <tr>
+                                                <th scope="col">رقم</th>
+                                                <th scope="col">التاريخ</th>
+                                                <th scope="col">القسيمة</th>
+                                                <th scope="col">الخيار</th>
+                                                <th scope="col">البائع</th>
+                                                <th scope="col">المدفوع</th>
+                                                <th scope="col">المتبقي</th>
+                                                <th scope="col">الكود</th>
+                                                <th scope="col">الحاله</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>10/10/2022</td>
+                                                <td>تنظيف الاسنان باقة العروس</td>
+                                                <td>الخيار</td>
+                                                <td>مستشفي الاندلس</th>
+                                                <td>500 ريال</td>
+                                                <td>300 ريال</td>
+                                                <td>15185</td>
+                                                <td>نشط</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>10/10/2022</td>
+                                                <td>تنظيف الاسنان باقة العروس</td>
+                                                <td>الخيار</td>
+                                                <td>مستشفي الاندلس</th>
+                                                <td>500 ريال</td>
+                                                <td>300 ريال</td>
+                                                <td>15185</td>
+                                                <td>نشط</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">3</th>
+                                                <td>10/10/2022</td>
+                                                <td>تنظيف الاسنان باقة العروس</td>
+                                                <td>الخيار</td>
+                                                <td>مستشفي الاندلس</th>
+                                                <td>500 ريال</td>
+                                                <td>300 ريال</td>
+                                                <td>15185</td>
+                                                <td>نشط</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+
+                            <!-- Fav -->
+                            <div class="favourite-tab tab-pane fade" id="favourite-tab-content" role="tabpanel"
+                                aria-labelledby="favourite-tab">
+
+                                <div class="selling-item-sec">
+                                    <div class="row">
+
+                                        <div class="col-lg-2"></div>
+
+                                        <div class="col-lg-8">
+                                            <div class="container">
+
+                                                <div class="row selling-item-card">
+
+                                                    <div class="col-md-4 card-right">
+                                                        <img src="../assets/img/item1.png" alt="">
+                                                        <span class="discount">40%</span>
+                                                    </div>
+
+                                                    <div class="col-md-8 card-left">
+                                                        <p>باقة العروس جلسة إزالة الشعر بالليزر لكامل الجسم</p>
+                                                        <p> <i class="fas fa-hand-holding-usd"></i> <span
+                                                                class="price-before"> 5000 </span> ريال <i
+                                                                class="arrow-icon fas fa-long-arrow-alt-left"></i> <span
+                                                                class="price-after"> 3000 </span> ريال </p>
+                                                        <p> <i class="fas fa-user"></i> نور عبدالله بن سامي </p>
+                                                        <a class="continue" href="#">اتمام الشراء</a>
+                                                        <a class="delete" href="#">حذف</a>
+                                                    </div>
+
+                                                </div>
+
+                                                <div class="row selling-item-card">
+
+                                                    <div class="col-md-4 card-right">
+                                                        <img src="../assets/img/item1.png" alt="">
+                                                        <span class="discount">40%</span>
+                                                    </div>
+
+                                                    <div class="col-md-8 card-left">
+                                                        <p> باقة العروس جلسة إزالة اباقة العروس جلسة إزالةلشعر بالليزر
+                                                            لكامل الجسم</p>
+                                                        <p> <i class="fas fa-hand-holding-usd"></i> <span
+                                                                class="price-before"> 10000 </span> ريال <i
+                                                                class="arrow-icon fas fa-long-arrow-alt-left"></i> <span
+                                                                class="price-after"> 15000 </span> ريال </p>
+                                                        <p> <i class="fas fa-user"></i>عبدالله نور محمد </p>
+                                                        <a class="continue" href="#">اتمام الشراء</a>
+                                                        <a class="delete" href="#">حذف</a>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-2"></div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-bg">
+            <div class="container">
+                <div class="row footer-content">
+                    <!-- link  -->
+                    <div class="footer-links col-md-4">
+                        <div class="row">
+                            <ul class="col-6">
+                                <h3>الموقع</h3>
+                                <li><a href="index.html">الرئيسية</a></li>
+                                <li><a href="about-us.html">من نحن</a></li>
+                                <li><a href="marketer.html">المسوقين</a></li>
+                            </ul>
+                            <ul class="col-6">
+                                <h3>الدعم</h3>
+                                <li><a href="terms-conditions.html">الشروط والاحكام</a></li>
+                                <li><a href="contact-us.html">تواصل معنا</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- logo -->
+                    <div class="col-md-4 logo-col">
+                        <a href="index.html" class="footer-logo"></a>
+                    </div>
+                    <!-- payments -->
+                    <div class="col-md-4">
+                        <div class="footer-payments">
+                            <h3>وسائل الدفع</h3>
+                            <div class="payments-icons"></div>
+                        </div>
+                    </div>
+                    <!-- footer bottom -->
+                    <div class="col-12">
+                        <div class="footer-bottom">
+                            <hr>
+                            <div class="maroof-div">
+                                <a class="maroof" href="#"></a>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 rights">
+                                    <p>جميع الحقوق محفوظة</p>
+                                </div>
+                                <div class="col-md-6 icons">
+                                    <a href="#">
+                                        <i class="fab fa-snapchat-ghost"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                    <a href="#">
+                                        <i class="fab fa-instagram"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>

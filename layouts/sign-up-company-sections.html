@@ -15,7 +15,7 @@
 
 <body>
 
-    <main>
+    <main class="signup-company-page">
 
         <!-- Title Section For Buy Now Page -->
 
@@ -46,40 +46,40 @@
                     <div class="col-lg-2"></div>
                     <div class="col-lg-8">
 
-                        <form action="post">
+                        <form class="was-validated" action="post">
 
                             <div class='row'>
 
                                 <div class="col-lg-6">
                                     <div class="box">
-                                        <label for="name">اسم الشركة</label>
-                                        <input name="company-name" class="form-name" placeholder="مثال : علي"
+                                        <label for="company-name">اسم الشركة</label>
+                                        <input name="company-name" class="form-name is-invalid form-control" placeholder="مثال : علي"
                                             type="text" required>
                                     </div>
                                     <div class="box">
                                         <label for="">العنوان</label>
-                                        <input name="company-addres" class="form-addres"
+                                        <input name="company-addres" class="form-addres is-invalid form-control"
                                             placeholder="مثال : شارع الامام علي" type="text" required>
                                     </div>
                                     <div class="box">
                                         <label for="">رقم الهاتف</label>
-                                        <input name="company-number" placeholder="+966123456789" type="number" required>
+                                        <input name="company-number" class="is-invalid form-control" placeholder="+966123456789" type="number" required>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-6">
                                     <div class="box">
                                         <label for="">البريد الالكتروني</label>
-                                        <input name="company-email" placeholder="email@gmail.com" type="email" required>
+                                        <input name="company-email" class="is-invalid form-control" placeholder="email@gmail.com" type="email" required>
                                     </div>
                                     <div class="box">
                                         <label for="">المدينة</label>
-                                        <input name="company-city" class="form-city" placeholder="مثال : الرياض"
+                                        <input name="company-city" class="form-city is-invalid form-control" placeholder="مثال : الرياض"
                                             type="text" required>
                                     </div>
                                     <div class="box">
                                         <label for="">كلمة المرور</label>
-                                        <input name="company-password" placeholder="********" type="password" required>
+                                        <input name="company-password" class="is-invalid form-control" minlength="8" placeholder="********" type="password" required>
                                     </div>
                                 </div>
 
@@ -143,8 +143,7 @@
     <script src="../assets/js/bootstrap.min.js"></script>
     <script src="../assets/js/owl.carousel.min.js"></script>
     <script src="../assets/js/main.js"></script>
-    <script
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcz6JBbB9DtEGNR1NPxob3jrNADfrURnE&callback=initMap"> </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcz6JBbB9DtEGNR1NPxob3jrNADfrURnE&callback=initMap"> </script>
 
 </body>
 

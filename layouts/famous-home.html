@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قسيمة | مشهور</title>
+
+    <link rel="shortcut icon" href="../assets/img/favicon.svg" type="image/x-icon">
+    <link rel="stylesheet" href="../assets/css/main.css">
+</head>
+
+<body>
+
+    <main class="famous-home">
+
+        <!-- Home Page For Famous -->
+
+        <div class="tabs-sec">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link ln-h3" id="info-tab" data-toggle="pill" href="#info-tab-content"
+                                    role="tab" aria-controls="info" aria-selected="true">البيانات</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link active" id="qsimh-tab" data-toggle="pill" href="#qsimh-tab-content"
+                                    role="tab" aria-controls="qsimh" aria-selected="false">القسائم</a>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <a class="nav-link" id="deals-tab" data-toggle="pill" href="#deals-tab-content"
+                                    role="tab" aria-controls="deals" aria-selected="false">التعاملات المالية</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="pills-tabContent">
+
+                            <!-- Info Tab -->
+                            <div class="info-tab tab-pane fade" id="info-tab-content" role="tabpanel"
+                                aria-labelledby="info-tab">
+
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-2"></div>
+                                        <div class="col-lg-8">
+                                            <form class="was-validated" action="post">
+                                                <div class='row'>
+                                                    <div class="col-lg-6">
+
+                                                        <div class="box">
+                                                            <label for="famous-name">الاسم</label>
+                                                            <input name="famous-name"
+                                                                class="form-rtl is-invalid form-control"
+                                                                placeholder="مثال : علي" type="text" required>
+                                                        </div>
+
+                                                        <div class="box">
+                                                            <label for="famous-name">اسم الشركة</label>
+                                                            <input name="famous-name"
+                                                                class="form-rtl is-invalid form-control"
+                                                                placeholder="مثال : شركة الاندلس للرحلات" type="text"
+                                                                required>
+                                                        </div>
+
+                                                        <div class="box">
+                                                            <label for="famous-number">رقم الهاتف</label>
+                                                            <input name="famous-number" class="is-invalid form-control"
+                                                                placeholder="+966123456789" type="number" required>
+                                                        </div>
+
+                                                        <div class="box">
+                                                            <label for="famous-commercial-registration">رقم السجل
+                                                                التجاري</label>
+                                                            <input name="famous-commercial-registration"
+                                                                class="is-invalid form-control" placeholder="123456"
+                                                                type="number" required>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="col-lg-6">
+                                                        <div class="box">
+                                                            <label for="famous-email">البريد الالكتروني</label>
+                                                            <input name="famous-email" class="is-invalid form-control"
+                                                                placeholder="email@gmail.com" type="email" required>
+                                                        </div>
+                                                        <div class="box">
+                                                            <label for="famous-city">المدينة</label>
+                                                            <input name="famous-city"
+                                                                class="form-rtl is-invalid form-control"
+                                                                placeholder="مثال : الرياض" type="text" required>
+                                                        </div>
+                                                        <div class="box">
+                                                            <label for="famous-password">كلمة المرور</label>
+                                                            <input name="famous-password" minlength="8"
+                                                                class="is-invalid form-control" placeholder="********"
+                                                                type="password" required>
+                                                        </div>
+
+                                                        <div class="box">
+                                                            <label for="famous-photo">صورة المستخدم</label>
+                                                            <div class="custom-file">
+                                                                <input name="famous-photo" type="file"
+                                                                    class="is-invalid form-control custom-file-input"
+                                                                    id="customFile" required>
+                                                                <label class="custom-file-label" for="customFile">اضغط
+                                                                    لرفع صورة</label>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="col-lg-3"></div>
+
+                                                    <div class="col-lg-6 form-bottom">
+
+                                                        <button type="submit">حفظ</button>
+
+                                                    </div>
+
+                                                    <div class="col-lg-3"></div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col-lg-2"></div>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <!-- Qsimh -->
+                            <div class="qsimh-tab tab-pane fade show active" id="qsimh-tab-content" role="tabpanel"
+                                aria-labelledby="qsimh-tab">
+
+                                <div class="qsimh-table table-responsive">
+
+                                    <table class="table table-hover">
+                                        <thead class="thead-color">
+                                            <tr>
+                                                <th scope="col">صورة</th>
+                                                <th scope="col">قسيمة</th>
+                                                <th scope="col">خيارات</th>
+                                                <th scope="col">مدينة</th>
+                                                <th scope="col">الحالة</th>
+                                                <th scope="col">أمر</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="qsimh-table-img" scope="row"><img
+                                                        src="../assets/img/about-mission.png"></th>
+                                                <td>تنظيف الاسنان باقة العروس</td>
+                                                <td>خيارات</td>
+                                                <td>الرياض</td>
+                                                <td>نشط</th>
+                                                <td><a class="order-btn" href="#">تعليق</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="qsimh-table-img" scope="row"><img
+                                                        src="../assets/img/about-vision.png"></th>
+                                                <td>تنظيف الاسنان باقة العروس</td>
+                                                <td>خيارات</td>
+                                                <td>الرياض</td>
+                                                <td>نشط</th>
+                                                <td><a class="order-btn" href="#">تعليق</a></td>
+                                            </tr>
+                                            <tr>
+                                                <th class="qsimh-table-img" scope="row"><img
+                                                        src="../assets/img/about-mission.png"></th>
+                                                <td>تنظيف الاسنان باقة العروس</td>
+                                                <td>خيارات</td>
+                                                <td>الرياض</td>
+                                                <td>نشط</th>
+                                                <td><a class="order-btn" href="#">تعليق</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+
+                            <!-- Deals -->
+                            <div class="deals-tab tab-pane fade" id="deals-tab-content" role="tabpanel"
+                                aria-labelledby="deals-tab">
+
+                                <div class="row">
+                                    <div class="col-lg-3">
+                                        <div class="deal-card green">
+                                            <div class="deal-card-img cart"></div>
+                                            <div class="deal-card-text">
+                                                <p>اجمالي الطلبات</p>
+                                                <p>5000 ريال</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <div class="deal-card blue">
+                                            <div class="deal-card-img bag"></div>
+                                            <div class="deal-card-text">
+                                                <p>اجمالي الطلبات</p>
+                                                <p>5000 ريال</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <div class="deal-card red">
+                                            <div class="deal-card-img price"></div>
+                                            <div class="deal-card-text">
+                                                <p>اجمالي الطلبات</p>
+                                                <p>5000 ريال</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-3">
+                                        <div class="deal-card gray">
+                                            <div class="deal-card-img money-bag"></div>
+                                            <div class="deal-card-text">
+                                                <p>اجمالي الطلبات</p>
+                                                <p>5000 ريال</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a class="pull-money" href="#">طلب سحب الارباح</a>
+
+                                <div class="deals-table table-responsive">
+
+                                    <table class="table table-hover">
+                                        <thead class="thead-color">
+                                            <tr>
+                                                <th scope="col">مبلغ المعاملة</th>
+                                                <th scope="col">صياغة المعاملة</th>
+                                                <th scope="col">تفاصيل المعاملة</th>
+                                                <th scope="col">تاريخ المعاملة</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">50</th>
+                                                <td>ارباح قسيمة</td>
+                                                <td>تنظيف الاسنان باقة العروس</td>
+                                                <td>10/10/2022</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">70</th>
+                                                <td>ارباح قسيمة</td>
+                                                <td>تنظيف الاسنان باقة العروس</td>
+                                                <td>10/10/2022</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">150</th>
+                                                <td>ارباح قسيمة</td>
+                                                <td>تنظيف الاسنان باقة العروس</td>
+                                                <td>10/10/2022</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <script src="../assets/js/owl.carousel.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+
+</body>
+
+</html>
