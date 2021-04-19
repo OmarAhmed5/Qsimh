@@ -72,14 +72,14 @@
     </header>
 
     <main class="signup-customer-page">
-
+    
         <!-- Title Section For Buy Now Page -->
-
+    
         <div class="title-sec">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-
+    
                         <h1>
                             التسجيل للعملاء
                         </h1>
@@ -87,82 +87,92 @@
                             التسجيل للعملاء
                         </h4>
                         <hr>
-
+    
                     </div>
-
+    
                 </div>
             </div>
         </div>
-
+    
         <!-- Form Section For Sign Up Page -->
-
+    
         <div class="form-sec">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-2"></div>
                     <div class="col-lg-8">
-                        <div class='row'>
-
-                            <div class="col-lg-6">
-                                <div class="box">
-                                    <label for="name">الاسم</label>
-                                    <input class="form-name" placeholder="مثال : علي" type="text">
-                                </div>
-                                <div class="box">
-                                    <label for="">رقم الهاتف</label>
-                                    <input placeholder="+966123456789" type="number">
-                                </div>
-                            </div>
-
-                            <div class="col-lg-6">
-                                <div class="box">
-                                    <label for="">البريد الالكتروني</label>
-                                    <input placeholder="email@gmail.com" type="email">
-                                </div>
-                                <div class="box">
-                                    <label for="">كلمة المرور</label>
-                                    <input placeholder="********" type="password">
-                                </div>
-                            </div>
-
-                            <div class="col-lg-3"></div>
-
-                            <div class="col-lg-6 form-bottom">
-
-                                <input type="checkbox" name="terms" id="terms">
-                                <label class="checkbox-label" for="terms">موافق علي <a
-                                        href="terms-conditions.html">الشروط و الاحكام</a></label>
-
-                                <button type="submit">التسجيل</button>
-
-                                <hr>
-
-                                <div class="row">
-
-                                    <div class="col-lg-6 have-acc">
-                                        <h6> هل لديك حساب ؟ </h6>
-                                        <a class="sign-up-btn" href="sign-in.html"> تسجيل الدخول </a>
+    
+                        <form class="was-validated" action="post">
+    
+                            <div class='row'>
+    
+                                <div class="col-lg-6">
+                                    <div class="box">
+                                        <label for="name">الاسم</label>
+                                        <input name="customer-name" class="form-name is-invalid form-control"
+                                            placeholder="مثال : علي" type="text" required>
                                     </div>
-
-                                    <div class="col-lg-6 signup-company">
-                                        <h6> هل انت تاجر ؟ </h6>
-                                        <a class="sign-up-btn" href="sign-up-company.html"> التسجيل للتجار </a>
+                                    <div class="box">
+                                        <label for="">رقم الهاتف</label>
+                                        <input name="customer-number" class="is-invalid form-control"
+                                            placeholder="+966123456789" type="number" required>
                                     </div>
-
                                 </div>
-
+    
+                                <div class="col-lg-6">
+                                    <div class="box">
+                                        <label for="">البريد الالكتروني</label>
+                                        <input name="customer-email" class="is-invalid form-control"
+                                            placeholder="email@gmail.com" type="email" required>
+                                    </div>
+                                    <div class="box">
+                                        <label for="">كلمة المرور</label>
+                                        <input name="customer-password" class="is-invalid form-control" minlength="8"
+                                            placeholder="********" type="password" required>
+                                    </div>
+                                </div>
+    
+                                <div class="col-lg-3"></div>
+    
+                                <div class="col-lg-6 form-bottom">
+    
+                                    <input type="checkbox" name="terms" id="terms">
+                                    <label class="checkbox-label" for="terms">موافق علي <a
+                                            href="terms-conditions.html">الشروط و
+                                            الاحكام</a></label>
+    
+                                    <button type="submit">التسجيل</button>
+    
+                                    <hr>
+    
+                                    <div class="row">
+    
+                                        <div class="col-lg-6 have-acc">
+                                            <h6> هل لديك حساب ؟ </h6>
+                                            <a class="sign-up-btn" href="sign-in.html"> تسجيل الدخول </a>
+                                        </div>
+    
+                                        <div class="col-lg-6 signup-company">
+                                            <h6> هل انت تاجر ؟ </h6>
+                                            <a class="sign-up-btn" href="sign-up-company.html"> التسجيل للتجار </a>
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+    
+                                <div class="col-lg-3"></div>
+    
                             </div>
-
-                            <div class="col-lg-3"></div>
-
-                        </div>
+    
+                        </form>
+    
                     </div>
                     <div class="col-lg-2"></div>
                 </div>
             </div>
         </div>
-
-
+    
     </main>
 
     <footer>

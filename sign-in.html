@@ -72,14 +72,14 @@
     </header>
 
     <main class="signin-page">
-
+    
         <!-- Title Section For Buy Now Page -->
-
+    
         <div class="title-sec">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-
+    
                         <h1>
                             تسجيل الدخول
                         </h1>
@@ -87,54 +87,62 @@
                             تسجيل الدخول
                         </h4>
                         <hr>
-
+    
                     </div>
-
+    
                 </div>
             </div>
         </div>
-
+    
         <!-- Login Form Section For Login Page -->
-
+    
         <div class="form-sec">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg-4"></div>
-                    <div class="col-lg-4">
-
-                        <div class="box">
-
-                            <label for="">البريد الالكتروني</label>
-                            <input placeholder="email@gmail.com" type="email">
-
+    
+                <form class="was-validated" action="post">
+    
+                    <div class="row">
+                        <div class="col-lg-4"></div>
+                        <div class="col-lg-4">
+    
+                            <div class="box">
+    
+                                <label for="">البريد الالكتروني</label>
+                                <input class="is-invalid form-control" name="email" placeholder="email@gmail.com"
+                                    type="email" required>
+    
+                            </div>
+    
+                            <div class="box">
+    
+                                <label for="">كلمة المرور</label>
+                                <input class="is-invalid form-control" minlength="8" name="password" placeholder="********"
+                                    type="password" required>
+    
+                            </div>
+    
+                            <input type="checkbox" name="remeber" id="remeber" required>
+                            <label class="checkbox-label" for="remeber">تذكرني</label>
+    
+                            <button type="submit">الدخول</button>
+    
+                            <a class="forget" href="#"> نسيت كلمة المرور ؟ </a>
+    
+                            <hr>
+    
+                            <h6> ليس لديك حساب ؟ </h6>
+    
+                            <a class="sign-up-btn" href="sign-up-customer.html"> التسجيل </a>
+    
                         </div>
-
-                        <div class="box">
-
-                            <label for="">كلمة المرور</label>
-                            <input placeholder="********" type="password">
-
-                        </div>
-
-                        <input type="checkbox" name="remeber" id="remeber">
-                        <label class="checkbox-label" for="remeber">تذكرني</label>
-
-                        <button type="submit">الدخول</button>
-
-                        <a class="forget" href="#"> نسيت كلمة المرور ؟ </a>
-
-                        <hr>
-
-                        <h6> ليس لديك حساب ؟ </h6>
-
-                        <a class="sign-up-btn" href="sign-up-customer.html"> التسجيل </a>
-
+                        <div class="col-lg-4"></div>
                     </div>
-                    <div class="col-lg-4"></div>
-                </div>
+    
+                </form>
+    
             </div>
         </div>
-
+    
     </main>
 
     <footer>

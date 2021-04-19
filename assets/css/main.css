@@ -224,7 +224,10 @@ header{
     background-color: var(--main-text-color);
   }
   .navbar .nav-btn {
-    margin-top: 10px;
+    position: absolute;
+    bottom: 25px;
+    display: block;
+    width: 84%;
   }
   .navbar .nav-btn a {
     width: 100%;
