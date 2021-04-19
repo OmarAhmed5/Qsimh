@@ -225,7 +225,7 @@ header{
   }
   .navbar .nav-btn {
     position: absolute;
-    bottom: 25px;
+    bottom: 0px;
     display: block;
     width: 84%;
   }
