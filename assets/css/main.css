@@ -140,11 +140,13 @@ header{
     background: #fff;
     box-shadow: 1px 2px 4px #00000030;
     padding: 15px;
-    top: 7px;
-    position: relative;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 100vh;
+    transition: 0.2s;
     z-index: 99999999;
-    border-bottom-right-radius: 10px;
-    border-bottom-left-radius: 10px;
   }
 }
 /* nav links */
@@ -212,7 +214,7 @@ header{
   .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
     text-align: right;
     color: var(--second-text-color);
-    margin-bottom: 5px;
+    margin-bottom: 35px;
   }
   .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active {
     color: var(--main-text-color);
@@ -225,10 +227,11 @@ header{
     margin-top: 10px;
   }
   .navbar .nav-btn a {
-    width: 47%;
+    width: 100%;
   }
   .navbar .nav-btn a:last-child {
     color: var(--main-color);
+    margin-top: 15px;
   }
 }
 /* End Navbar */
@@ -302,7 +305,7 @@ footer .footer-content .footer-links ul li a {
   display: block;
   text-decoration: none;
   color: #ddd;
-  font-size: 14px;
+  font-size: 15px;
   margin-bottom: 10px;
 }
 footer .footer-content .footer-links ul h3 {
@@ -335,13 +338,28 @@ footer .footer-content .footer-payments h3 {
   text-align: left;
   font-weight: bold;
   color: #fff;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
-
+footer .footer-content .footer-payments .app-text{
+  left: 30px;
+}
+footer .footer-content .footer-payments .pay-text{
+  margin-top: 70px;
+}
+footer .footer-content .footer-payments .app-icons {
+  float: left;
+  width: 55%;
+}
+footer .footer-content .footer-payments .app-icons a{
+  display: inline;
+}
+footer .footer-content .footer-payments .app-icons a img{
+  width: 47%;
+}
 footer .footer-content .footer-payments .payments-icons {
   background: url(../img/payments.png) no-repeat;
   width: 55%;
-  height: 125px;
+  height: 32px;
   background-size: contain;
   float: left;
 }
@@ -373,6 +391,15 @@ footer .footer-content .footer-bottom .rights p {
 footer .footer-content .footer-bottom .icons {
   text-align: left;
 }
+footer .footer-content .footer-bottom .icons .snapchat{
+  color: #FFFC00;
+}
+footer .footer-content .footer-bottom .icons .twitter{
+  color: #1dcaff;
+}
+footer .footer-content .footer-bottom .icons .instagram{
+  color: #C13584;
+}
 footer .footer-content .footer-bottom .icons a {
   color: #fff;
   font-size: 18px;
@@ -382,9 +409,6 @@ footer .footer-content .footer-bottom .icons a {
 footer .footer-content .footer-bottom .icons a:nth-child(2) {
   margin: 0px 25px;
 }
-footer .footer-content .footer-bottom .icons a:hover {
-  color: var(--main-color);
-}
 
 /* media for all footer components */
 
@@ -393,8 +417,11 @@ footer .footer-content .footer-bottom .icons a:hover {
     width: 95%;
   }
   footer .footer-content .footer-payments h3 {
-    left: 21px;
+    left: 18px;
   }
+  footer .footer-content .footer-payments .app-text{
+  left: 12px;
+}
 }
 @media (max-width: 992px) {
   footer .footer-content {
@@ -404,7 +431,7 @@ footer .footer-content .footer-bottom .icons a:hover {
     font-size: 14px;
   }
   footer .footer-content .footer-links ul li a {
-    font-size: 10px;
+    font-size: 11px;
   }
   footer .footer-content .footer-links ul li a::before {
     right: -32px;
@@ -415,38 +442,66 @@ footer .footer-content .footer-bottom .icons a:hover {
     font-size: 14px;
     left: 16px;
   }
-  footer .footer-content .footer-payments .payments-icons {
-    height: 100px;
+  footer .footer-content .footer-payments .pay-text {
+    margin-top: 65px;
   }
 }
 @media (max-width: 767px) {
   footer .footer-bg {
     background: unset;
-    background-image: var(--main-gradiant);
+    background-image: linear-gradient(to top, #2b7ba5, #2e8eb9 70%, #32a3d0);
     height: auto;
   }
   footer .footer-content {
     position: initial;
     padding: 30px;
   }
+  footer .footer-content .footer-links ul li a{
+    font-size: 12px;
+  }
   footer .footer-content .footer-logo {
     width: 30%;
     height: 60px;
   }
   footer .footer-content .footer-payments h3 {
+    position: unset;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
+  }
+  footer .footer-content .footer-payments .pay-text {
+    margin-top: 20px;
   }
   footer .logo-col {
     display: none;
   }
+  footer .footer-content .footer-payments .app-icons {
+    width: 200px;
+    float: none;
+    margin: auto;
+    height: 35px;
+    margin-bottom: 0;
+  }
   footer .footer-content .footer-payments .payments-icons {
     float: none;
-    width: 165px;
-    background-size: cover;
+    background-size: contain;
     margin: auto;
-    height: 105px;
+    height: 45px;
+    width: 200px;
     margin-bottom: 25px;
+  }
+  footer .footer-content .footer-payments .app {
+    margin-bottom: 25px;
+  }
+  footer .footer-content .footer-payments .pay {
+    position: relative;
+    bottom: -170px;
+  }
+  footer .footer-content .footer-bottom {
+    position: relative;
+    top: -90px;
+  }
+  footer .footer-content hr{
+    border-color: transparent;
   }
   footer .footer-content .footer-bottom .rights p {
     margin: 20px auto;
@@ -828,10 +883,11 @@ footer .footer-content .footer-bottom .icons a:hover {
 }
 .home-mobile-app-sec .mobile-text .android {
   display: inline-block;
-  width: 45%;
 }
 .home-mobile-app-sec .mobile-text .ios {
   display: inline-block;
+}
+.home-mobile-app-sec .mobile-text a{
   width: 40%;
 }
 .home-mobile-app-sec .mobile-text a img {
@@ -851,6 +907,9 @@ footer .footer-content .footer-bottom .icons a:hover {
   }
   .mobile-text {
     margin-bottom: 30px;
+  }
+  .home-mobile-app-sec .mobile-text a {
+    width: 30%;
   }
   .home-mobile-app-sec .mobile-text h2 {
     font-size: 40px;
@@ -876,11 +935,13 @@ footer .footer-content .footer-bottom .icons a:hover {
     text-align: center;
     font-size: 15px;
   }
-  .home-mobile-app-sec .mobile-text .android {
-    width: 50%;
-  }
-  .home-mobile-app-sec .mobile-text .ios {
-    width: 46%;
+  .home-mobile-app-sec .mobile-text a img {
+    width: 80%;
+    margin: auto;
+    display: block;
+}
+  .home-mobile-app-sec .mobile-text a {
+      width: 49%;
   }
 }
 
