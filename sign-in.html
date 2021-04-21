@@ -5,18 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>قسيمة | الدخول</title>
 
     <link rel="shortcut icon" href="assets/img/favicon.svg" type="image/x-icon">
-
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-
-    <link rel="stylesheet" href="assets/css/sign-in-sections.css">
-
-    <link rel="stylesheet" href="assets/css/footer.css">
 </head>
 
 <body>
@@ -54,11 +47,17 @@
                         <li class="nav-item">
                             <a class="nav-link" href="terms-conditions.html">الشروط و الاحكام</a>
                         </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="sign-up-customer.html">التسجيل</a>
+                        </li>
+                        <li class="nav-item d-lg-none">
+                            <a class="nav-link" href="sign-in.html">الدخول</a>
+                        </li>
                         <!-- End Nav Links -->
 
                     </ul>
                     <!-- Start Nav Buttons -->
-                    <div class="nav-btn">
+                    <div class="nav-btn d-lg-block d-none">
 
                         <a href="sign-up-customer.html">التسجيل</a>
                         <span></span>
@@ -72,14 +71,14 @@
     </header>
 
     <main class="signin-page">
-    
+
         <!-- Title Section For Buy Now Page -->
-    
+
         <div class="title-sec">
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-    
+
                         <h1>
                             تسجيل الدخول
                         </h1>
@@ -87,62 +86,62 @@
                             تسجيل الدخول
                         </h4>
                         <hr>
-    
+
                     </div>
-    
+
                 </div>
             </div>
         </div>
-    
+
         <!-- Login Form Section For Login Page -->
-    
+
         <div class="form-sec">
             <div class="container">
-    
+
                 <form class="was-validated" action="post">
-    
+
                     <div class="row">
                         <div class="col-lg-4"></div>
                         <div class="col-lg-4">
-    
+
                             <div class="box">
-    
+
                                 <label for="">البريد الالكتروني</label>
                                 <input class="is-invalid form-control" name="email" placeholder="email@gmail.com"
                                     type="email" required>
-    
+
                             </div>
-    
+
                             <div class="box">
-    
+
                                 <label for="">كلمة المرور</label>
-                                <input class="is-invalid form-control" minlength="8" name="password" placeholder="********"
-                                    type="password" required>
-    
+                                <input class="is-invalid form-control" minlength="8" name="password"
+                                    placeholder="********" type="password" required>
+
                             </div>
-    
+
                             <input type="checkbox" name="remeber" id="remeber" required>
                             <label class="checkbox-label" for="remeber">تذكرني</label>
-    
+
                             <button type="submit">الدخول</button>
-    
+
                             <a class="forget" href="#"> نسيت كلمة المرور ؟ </a>
-    
+
                             <hr>
-    
+
                             <h6> ليس لديك حساب ؟ </h6>
-    
+
                             <a class="sign-up-btn" href="sign-up-customer.html"> التسجيل </a>
-    
+
                         </div>
                         <div class="col-lg-4"></div>
                     </div>
-    
+
                 </form>
-    
+
             </div>
         </div>
-    
+
     </main>
 
     <footer>

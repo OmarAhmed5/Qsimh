@@ -137,7 +137,7 @@ header{
 }
 @media (max-width: 992px) {
   .navbar .navbar-collapse {
-    background: #fff;
+    background: var(--main-gradiant);
     box-shadow: 1px 2px 4px #00000050;
     padding: 15px;
     position: fixed;
@@ -213,15 +213,15 @@ header{
 @media (max-width: 992px) {
   .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
     text-align: right;
-    color: var(--second-text-color);
-    margin-bottom: 40px;
+    color: #eee;
+    margin-bottom: 20px;
   }
   .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active {
-    color: var(--main-text-color);
+    color: #fff;
   }
   .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active::before {
-    border: 1px solid var(--main-text-color);
-    background-color: var(--main-text-color);
+    border: 1px solid #fff;
+    background-color: #fff;
   }
   .navbar .nav-btn {
     display: block;
