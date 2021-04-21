@@ -138,12 +138,12 @@ header{
 @media (max-width: 992px) {
   .navbar .navbar-collapse {
     background: #fff;
-    box-shadow: 1px 2px 4px #00000030;
+    box-shadow: 1px 2px 4px #00000050;
     padding: 15px;
     position: fixed;
     right: 0;
     top: 0;
-    width: 200px;
+    width: 250px;
     height: 100vh;
     transition: 0s;
     z-index: 99999999;
@@ -214,7 +214,7 @@ header{
   .navbar .navbar-collapse .navbar-nav .nav-item .nav-link {
     text-align: right;
     color: var(--second-text-color);
-    margin-bottom: 45px;
+    margin-bottom: 40px;
   }
   .navbar .navbar-collapse .navbar-nav .nav-item .nav-link.active {
     color: var(--main-text-color);
@@ -224,10 +224,8 @@ header{
     background-color: var(--main-text-color);
   }
   .navbar .nav-btn {
-    position: absolute;
-    bottom: 10%;
     display: block;
-    width: 84%;
+    width: 100%;
   }
   .navbar .nav-btn a {
     width: 100%;
@@ -3267,6 +3265,131 @@ margin: 0;
   }
   .company-home .tab-content .table{
     font-size: 12px;
+  }
+}
+
+/* ! Add Qsimh Sections
+
+/* Info Tab */
+
+.add-qsimh-page {
+  margin: 50px 0px;
+  background: url(../img/map.png) no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.add-qsimh-page .deals-title h5{
+  font-size: 22px;
+  color: var(--main-text-color);
+  font-weight: bold;
+  text-align: right;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.add-qsimh-page .deals-title h5::after{
+    content: '';
+    margin-top: 20px;
+    width: 100px;
+    height: 8px;
+    display: block;
+    border-radius: 2px;
+    background-color: var(--main-color);
+}
+.add-qsimh-page .box input,.add-qsimh-page .box textarea,.add-qsimh-page .box select {
+  direction: ltr;
+  font-size: 16px;
+  border: 2px solid var(--third-text-color) !important;
+  color: var(--main-text-color);
+  padding: 5px 10px;
+  border-radius: 5px;
+  outline: unset;
+  width: 100%;
+  box-shadow: var(--main-box-shadow) !important;
+}
+.add-qsimh-page .box {
+  margin: 20px auto;
+}
+.add-qsimh-page .box-bottom {
+  margin: 0px;
+}
+.add-qsimh-page .box-sm-bottom{
+  margin-bottom: 0px;
+}
+.add-qsimh-page .box-sm-y{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.add-qsimh-page .box label {
+  font-weight: bold;
+  text-align: right;
+  display: block;
+}
+.add-qsimh-page .box .custom-file label {
+  padding-right: 90px;
+  border: 2px solid var(--third-text-color) !important;
+  font-size: 16px;
+}
+.add-qsimh-page .box .form-rtl {
+  direction: rtl;
+}
+.add-qsimh-page button {
+  display: block;
+  width: 100%;
+  border: unset;
+  outline: unset;
+  background: var(--main-gradiant);
+  color: #fff;
+  font-weight: bold;
+  padding: 10px 5px;
+  border-radius: 5px;
+  margin-top: 30px;
+  box-shadow: var(--main-box-shadow);
+}
+.add-qsimh-page .box textarea{
+  height: 100px !important;
+}
+.add-qsimh-page .box .area95{
+  height: 95px !important;
+}
+@media (max-width: 992px) {
+  .add-qsimh-page {
+    height: auto;
+    background-size: cover;
+  }
+  .add-qsimh-page .deals-title h5{
+    font-size: 18px;
+  }
+  .add-qsimh-page .deals-title h5::after{
+    height: 6px;
+  }
+  .add-qsimh-page .box-bottom {
+  margin: 20px auto;
+  }
+  .add-qsimh-page .box:nth-child(2){
+  margin: 0px auto;
+  }
+  .add-qsimh-page .box-sm-bottom{
+  margin-bottom: 0px;
+  margin-top: 0px;
+  }
+  .add-qsimh-page .box-sm-top{
+  margin-top: 0px;
+  }
+  .add-qsimh-page .box label {
+    font-size: 14px;
+  }
+}
+@media (max-width:767px) {
+  .add-qsimh-page .deals-title h5{
+    font-size: 16px;
+  }
+  .add-qsimh-page .deals-title h5::after{
+    height: 4px;
+  }
+}
+@media (max-width:576px) {
+  .add-qsimh-page .deals-title h5{
+    margin-bottom: 20px;
   }
 }
 
