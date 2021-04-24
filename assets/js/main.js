@@ -101,6 +101,37 @@ $(document).ready(function () {
     })
 });
 
+// ! Short List
+
+$('.shortlist-sec .list-btn').on('click', function (){
+    $(this).parent('.shortlist-sec').toggleClass('is-visible');
+
+    if ($(this).parent('.shortlist-sec').hasClass('is-visible')) {
+
+        $(this).removeClass('fa-chevron-right');
+        $(this).addClass('fa-chevron-left');
+
+        $(this).parent('.shortlist-sec').animate({
+
+            left: 0
+
+        }, 100);
+
+    }
+    else {
+
+        $(this).removeClass('fa-chevron-left');
+        $(this).addClass('fa-chevron-right');
+
+        $(this).parent('.shortlist-sec').animate({
+
+            left : -150
+            
+        }, 100);
+
+    }
+})
+
 
 // ! Fav Icon On Hover
 
