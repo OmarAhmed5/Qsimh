@@ -137,40 +137,42 @@
                     <div class="col-lg-8">
 
                         <div class="contact-form">
-                            <div class="row">
-                                <div class="col-lg-6 right-side">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <label for="">الاسم</label>
-                                            <input type="text" placeholder="مثال : احمد">
+                            <form class="was-validated" action="">
+                                <div class="row">
+                                    <div class="col-lg-6 right-side">
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <label for="">الاسم</label>
+                                                <input class="is-invalid form-control" type="text" placeholder="مثال : احمد" required>
+                                            </div>
+                                            <div class="col-12 center-row">
+                                                <label for="">البريد الالكتروني</label>
+                                                <input class="is-invalid form-control" type="email" placeholder="مثال : email@gmail.com" required>
+                                            </div>
+                                            <div class="col-12">
+                                                <label for="">الموضوع</label>
+                                                <select class="is-invalid form-control" required>
+                                                    <option selected disabled value="">اختر</option>
+                                                    <option value="0">دعم فني</option>
+                                                    <option value="1">استفسار - شركة</option>
+                                                    <option value="2">استفسار - عميل</option>
+                                                </select>
+                                            </div>
                                         </div>
-                                        <div class="col-12 center-row">
-                                            <label for="">البريد الالكتروني</label>
-                                            <input type="email" placeholder="مثال : email@gmail.com">
-                                        </div>
-                                        <div class="col-12">
-                                            <label for="">الموضوع</label>
-                                            <select>
-                                                <option disabled selected>اختر</option>
-                                                <option value="0">دعم فني</option>
-                                                <option value="1">استفسار - شركة</option>
-                                                <option value="2">استفسار - عميل</option>
-                                            </select>
+                                    </div>
+                                    <div class="col-lg-6 left-side">
+                                        <div class="row">
+                                            <div class="col-12 center-phone-row">
+                                                <label for="">الرسالة</label>
+                                                <textarea class="is-invalid form-control" placeholder="ضع رسالتك هنا..." name="" id="" required></textarea>
+                                            </div>
+                                            <div class="col-12 submit-form">
+                                                <button type="submit">ارسال</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-lg-6 left-side">
-                                    <div class="row">
-                                        <div class="col-12 center-phone-row">
-                                            <label for="">الرسالة</label>
-                                            <textarea placeholder="ضع رسالتك هنا..." name="" id=""></textarea>
-                                        </div>
-                                        <div class="col-12 submit-form">
-                                            <button type="submit">ارسال</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            </form>
                         </div>
 
                     </div>

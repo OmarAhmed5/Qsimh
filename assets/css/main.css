@@ -1322,7 +1322,7 @@ footer .footer-content .footer-bottom .icons a:nth-child(2) {
   color: var(--second-text-color);
 }
 .contact-page .contact-sec .contact-form textarea {
-  height: 135px;
+  height: 135px !important;
 }
 .contact-page .contact-sec .contact-form select {
   padding: 4px 10px;
