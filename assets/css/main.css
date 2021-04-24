@@ -2426,7 +2426,7 @@ footer .footer-content .footer-bottom .icons a:nth-child(2) {
 .one-item-page .nav-pills .nav-item .nav-link {
   border-radius: 0.25rem;
   color: var(--third-text-color);
-  background-color: unset;
+  background-color: #fff;
   padding: 15px;
   font-weight: bold;
   border-radius: 0;
@@ -2437,7 +2437,7 @@ footer .footer-content .footer-bottom .icons a:nth-child(2) {
 }
 .one-item-page .nav-pills .nav-link.active,
 .one-item-page .nav-pills .show > .nav-link {
-  background: unset;
+  background: #fff;
   color: var(--second-text-color);
 }
 .one-item-page .tab-content {
@@ -2677,7 +2677,7 @@ footer .footer-content .footer-bottom .icons a:nth-child(2) {
     border-radius: 5px;
     box-shadow: 0px 0px 5px #00000030;
     color: var(--main-text-color);
-    background-color: unset;
+    background-color: #fff;
     font-weight: bold;
     padding: 10px 0px;
     width: 225px;
@@ -2688,7 +2688,7 @@ footer .footer-content .footer-bottom .icons a:nth-child(2) {
 }
 .customer-home .nav-pills .nav-link.active,
 .customer-home .nav-pills .show > .nav-link {
-    background: unset;
+    background: #fff;
     color: var(--main-color);
     border-color: var(--main-color);
 }
@@ -2906,6 +2906,7 @@ margin: 0;
   text-decoration: none;
   height: 150px;
   margin: 20px auto;
+  background-color: #fff;
 }
 .customer-home .selling-item-sec .selling-item-card .card-right {
   position: relative;
@@ -3017,7 +3018,7 @@ margin: 0;
     border-radius: 5px;
     box-shadow: 0px 0px 5px #00000030;
     color: var(--main-text-color);
-    background-color: unset;
+    background-color: #fff;
     font-weight: bold;
     padding: 10px 0px;
     width: 225px;
@@ -3028,7 +3029,7 @@ margin: 0;
 }
 .company-home .nav-pills .nav-link.active,
 .company-home .nav-pills .show > .nav-link {
-    background: unset;
+    background: #fff;
     color: var(--main-color);
     border-color: var(--main-color);
 }
@@ -3475,7 +3476,7 @@ margin: 0;
     border-radius: 5px;
     box-shadow: 0px 0px 5px #00000030;
     color: var(--main-text-color);
-    background-color: unset;
+    background-color: #fff;
     font-weight: bold;
     padding: 10px 0px;
     width: 225px;
@@ -3486,7 +3487,7 @@ margin: 0;
 }
 .famous-home .nav-pills .nav-link.active,
 .famous-home .nav-pills .show > .nav-link {
-    background: unset;
+    background: #fff;
     color: var(--main-color);
     border-color: var(--main-color);
 }
