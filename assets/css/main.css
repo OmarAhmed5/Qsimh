@@ -533,7 +533,14 @@ footer .footer-content .footer-bottom .icons a:nth-child(2) {
     bottom: 70px;
     z-index: 99999999;
 }
-
+@media (max-width:992px) {
+  .whatsapp-icon {
+  padding: 7px 7px 7px 10px;
+  font-size: 20px;
+  border-radius: 5px 0px 0px 5px;
+  bottom: 50px;
+} 
+}
 /* Befor Login */
 /* ! Main Top Section For ( Home - About - Marketer - Contact - Terms ) */
 
