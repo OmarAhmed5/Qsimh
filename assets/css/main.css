@@ -64,11 +64,11 @@
 }
 html {
   direction: rtl;
+  scroll-behavior: smooth;
 }
 body {
   font-family: "Kufi";
   background: #fff;
-  scroll-behavior: smooth;
   cursor: default;
   text-align: right;
   background: url(../img/fixed-logo.png) no-repeat;
@@ -529,6 +529,7 @@ footer .footer-content .footer-bottom .icons a:nth-child(2) {
   bottom: 50px;
 } 
 }
+
 /* Befor Login */
 /* ! Main Top Section For ( Home - About - Marketer - Contact - Terms ) */
 
@@ -538,6 +539,7 @@ footer .footer-content .footer-bottom .icons a:nth-child(2) {
   border-bottom-left-radius: 160px;
   border-bottom-right-radius: 160px;
   margin-bottom: 50px;
+  box-shadow: 0px 0px 5px #00000020;
 }
 .top-section .top-sec-content {
   padding-top: 60px;
@@ -1138,6 +1140,10 @@ footer .footer-content .footer-bottom .icons a:nth-child(2) {
   background-position: center;
   height: 500px;
 }
+.about-page .goals-sec .about-path{
+  position: absolute;
+  width: 100%;
+}
 .about-page .goals-sec .vision img,
 .about-page .goals-sec .mission img {
   width: 35%;
@@ -1190,6 +1196,9 @@ footer .footer-content .footer-bottom .icons a:nth-child(2) {
   .about-page .goals-sec {
     margin: 100px 0px;
   }
+  .about-page .goals-sec .about-path{
+    display: none;
+}
   .about-page .about-info-sec .about-text h2 {
     font-size: 35px;
   }
