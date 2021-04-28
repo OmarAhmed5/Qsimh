@@ -1390,7 +1390,6 @@ footer .footer-content .footer-bottom .icons a:nth-child(2) {
   background-image: var(--main-gradiant);
   height: 450px;
   z-index: 9999;
-  opacity: 0.5;
 }
 .terms-page .shortlist-sec .list-btn {
   height: 35px;
