@@ -180,7 +180,7 @@ header{
   transition: 0.3s ease-in-out;
 }
 /* nav buttons */
-.navbar .nav-btn a {
+.navbar .nav-btn .sign-btn {
   color: #fff;
   display: inline-block;
   text-align: center;
@@ -189,16 +189,16 @@ header{
   font-weight: normal;
   text-decoration: none;
 }
-.navbar .nav-btn a:hover {
+.navbar .nav-btn .sign-btn:hover {
   filter: drop-shadow(0px 0px 5px #00000035);
 }
-.navbar .nav-btn a:first-child {
+.navbar .nav-btn .sign-btn:first-child {
   background-image: var(--main-gradiant);
   border-top-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 8px 0px;
 }
-.navbar .nav-btn a:last-child {
+.navbar .nav-btn .sign-btn:last-child {
   border: 2px solid var(--main-color);
   border-top-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -208,7 +208,7 @@ header{
   margin: 0px 5px;
 }
 @media (max-width: 1199px) {
-  .navbar .nav-btn a {
+  .navbar .nav-btn .sign-btn {
     width: 80px;
     font-size: 15px;
   }
@@ -235,10 +235,10 @@ header{
     display: block;
     width: 100%;
   }
-  .navbar .nav-btn a {
+  .navbar .nav-btn .sign-btn {
     width: 100%;
   }
-  .navbar .nav-btn a:last-child {
+  .navbar .nav-btn .sign-btn:last-child {
     color: var(--main-color);
     margin-top: 15px;
   }
@@ -265,6 +265,8 @@ header{
 .navbar .dropdown-item {
   font-size: 12px;
   padding: 1px 6px;
+  background-color: #fff !important;
+  color: var(--second-text-color);
 }
 .navbar .dropdown-item img {
   width: 20px;
@@ -839,6 +841,24 @@ footer .footer-content .footer-bottom .icons a:nth-child(2) {
   top: 30px;
   left: 25px;
 }
+
+/* Start Hover Effect in Qsimh Card */
+
+.qsimh-card:hover {
+  filter: drop-shadow(0px 0px 5px #00000035);
+}
+.qsimh-card:hover.qsimh-card .price,
+.qsimh-card:hover.qsimh-card .bottom-card {
+  background-image: var(--main-gradiant);
+  color: #fff;
+}
+.qsimh-card:hover.qsimh-card .bottom-card h3,
+.qsimh-card:hover.qsimh-card .bottom-card h6,
+.qsimh-card:hover.qsimh-card .bottom-card i {
+  color: #fff;
+}
+
+/* End Hover Effect in Qsimh Card */
 @media (max-width: 1199px) {
   .home-most-selling-sec .qsimh-card .bottom-card h3 ,.home-most-recent-sec .qsimh-card .bottom-card h3{
     font-size: 15px;
@@ -2421,7 +2441,7 @@ footer .footer-content .footer-bottom .icons a:nth-child(2) {
 .one-item-page .nav-pills .nav-item .nav-link {
   border-radius: 0.25rem;
   color: var(--third-text-color);
-  background-color: #fff;
+  background-color: transparent;
   padding: 15px;
   font-weight: bold;
   border-radius: 0;
@@ -2432,7 +2452,6 @@ footer .footer-content .footer-bottom .icons a:nth-child(2) {
 }
 .one-item-page .nav-pills .nav-link.active,
 .one-item-page .nav-pills .show > .nav-link {
-  background: #fff;
   color: var(--second-text-color);
 }
 .one-item-page .tab-content {

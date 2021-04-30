@@ -152,6 +152,13 @@ $(document).ready(function () {
     });
 });
 
+// ! Tabs
+
+jQuery(document).ready(function ($) {
+    let selectedTab = window.location.hash;
+    $('.nav-link[href="' + selectedTab + '"]' ).trigger('click');
+})
+
 // ! Active Map
 
 window.onload = function () {
