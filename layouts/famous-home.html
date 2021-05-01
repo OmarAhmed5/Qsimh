@@ -192,7 +192,7 @@
                                             <div class="deal-card-img cart"></div>
                                             <div class="deal-card-text">
                                                 <p>اجمالي الطلبات</p>
-                                                <p>5000 ريال</p>
+                                                <p>5000 طلب</p>
                                             </div>
                                         </div>
                                     </div>
@@ -201,8 +201,8 @@
                                         <div class="deal-card blue">
                                             <div class="deal-card-img bag"></div>
                                             <div class="deal-card-text">
-                                                <p>اجمالي الطلبات</p>
-                                                <p>5000 ريال</p>
+                                                <p> الطلبات المفعلة</p>
+                                                <p>5000 طلب</p>
                                             </div>
                                         </div>
                                     </div>
@@ -211,7 +211,7 @@
                                         <div class="deal-card red">
                                             <div class="deal-card-img price"></div>
                                             <div class="deal-card-text">
-                                                <p>اجمالي الطلبات</p>
+                                                <p> الرصيد الحالي </p>
                                                 <p>5000 ريال</p>
                                             </div>
                                         </div>
@@ -221,14 +221,56 @@
                                         <div class="deal-card gray">
                                             <div class="deal-card-img money-bag"></div>
                                             <div class="deal-card-text">
-                                                <p>اجمالي الطلبات</p>
+                                                <p>اجمالي الارباح</p>
                                                 <p>5000 ريال</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <a class="pull-money" href="#">طلب سحب الارباح</a>
+                                <a type="button" data-toggle="modal" data-target="#reqest-money"  class="pull-money" href="#">طلب سحب الارباح</a>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="reqest-money" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">طلب سحب الاموال</h5>
+                                                <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container-fluid">
+                                                    <form class="was-validated" action="post">
+                                                        <div class="row">
+                                                            <div class="col-6">
+                                                                <label for="">البريد الالكتروني</label>
+                                                                <input class="is-invalid form-control" name="email" placeholder="email@gmail.com" type="email" required>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <label for="">البريد الالكتروني</label>
+                                                                <input class="is-invalid form-control" name="email" placeholder="email@gmail.com" type="email" required>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <label for="">البريد الالكتروني</label>
+                                                                <input class="is-invalid form-control" name="email" placeholder="email@gmail.com" type="email" required>
+                                                            </div>
+                                                            <div class="col-6">
+                                                                <label for="">البريد الالكتروني</label>
+                                                                <input class="is-invalid form-control" name="email" placeholder="email@gmail.com" type="email" required>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-primary">ارسال</button>
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">اغلاق</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                                 <div class="deals-table table-responsive">
 
