@@ -1112,21 +1112,27 @@ footer .footer-content .footer-bottom .icons a:nth-child(2) {
 .marketer-page .marketer-sec .show-more {
   margin: 50px auto;
 }
-.marketer-page .marketer-sec .show-more a {
-  text-align: center;
-  display: table;
-  margin: auto;
-  text-decoration: none;
-  color: var(--second-text-color);
+.marketer-page .marketer-sec .show-more .page-item .page-link {
   font-weight: bold;
-  padding: 10px 25px;
-  border-radius: 5px;
-  box-shadow: 0px 0px 5px #00000020;
-  border: 1px solid var(--second-color);
+  color: var(--main-color);
+  background-color: #fff;
+  padding: 10px 15px;
+  margin: 0px 5px;
+  border-radius: 100%;
+  text-align: center;
+  box-shadow: 0px 0px 19px #00000030;
+  opacity: 0.9;
 }
-.marketer-page .marketer-sec .show-more a:hover {
-  background-image: var(--main-gradiant);
+.marketer-page .marketer-sec .show-more .page-item.disabled .page-link{
+  color: var(--third-text-color);
+}
+.marketer-page .marketer-sec .show-more .page-item.active .page-link{
+  border: unset;
+  background-color: var(--main-color);
   color: #fff;
+}
+.marketer-page .marketer-sec .show-more .page-item .page-link:hover {
+  opacity: 1;
 }
 
 /* ! About Us Sections */
