@@ -1126,7 +1126,7 @@ footer .footer-content .footer-bottom .icons a:nth-child(2) {
 .marketer-page .marketer-sec .show-more .page-item.disabled .page-link{
   color: var(--third-text-color);
 }
-.marketer-page .marketer-sec .show-more .page-item.active .page-link{
+.marketer-page .marketer-sec .show-more .page-item .page-link.active{
   border: unset;
   background-color: var(--main-color);
   color: #fff;
@@ -1659,6 +1659,57 @@ footer .footer-content .footer-bottom .icons a:nth-child(2) {
   .signin-page .form-sec {
     height: auto;
     background-size: cover;
+  }
+}
+
+/* ! Forget Password */
+
+.forget-password-page .title-sec h1 {
+  font-size: 70px;
+  text-align: center;
+  color: var(--third-text-color);
+  opacity: 0.3;
+}
+.forget-password-page .title-sec h4 {
+  position: absolute;
+  font-size: 45px;
+  color: var(--main-text-color);
+  bottom: 5px;
+  transform: translateX(50%);
+  right: 50%;
+  opacity: 0.9;
+}
+@media (max-width: 992px) {
+  .forget-password-page .title-sec h1 {
+    font-size: 55px;
+  }
+  .forget-password-page .title-sec h4 {
+    font-size: 35px;
+    bottom: -10px;
+  }
+  .forget-password-page .title-sec hr {
+    margin: 0px auto;
+  }
+}
+@media (max-width: 767px) {
+  .forget-password-page .title-sec h1 {
+    font-size: 35px;
+  }
+  .forget-password-page .title-sec h4 {
+    font-size: 25px;
+    bottom: -10px;
+  }
+  .forget-password-page .title-sec hr {
+    margin: 0px auto;
+  }
+}
+@media (max-width: 576px) {
+  .forget-password-page .title-sec h1 {
+    font-size: 25px;
+  }
+  .forget-password-page .title-sec h4 {
+    font-size: 16px;
+    bottom: -10px;
   }
 }
 

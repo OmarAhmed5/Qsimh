@@ -109,6 +109,12 @@ $(document).ready(function () {
     })
 });
 
+// ! Active Pagination Link
+
+$('.pagination li a').click(function () {
+    $(this).addClass('active').parent().siblings().find('a').removeClass('active');
+});
+
 // ! Short List
 
 $('.shortlist-sec .list-btn').on('click', function (){
