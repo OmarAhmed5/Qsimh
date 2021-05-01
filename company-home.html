@@ -60,10 +60,14 @@
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <span><img
                                         src="assets/img/my-acc.svg" alt=""></span> حسابي </button>
                             <div class="dropdown-menu dropdown-menu-right text-right">
-                                <a class="dropdown-item" href="#"><span><img src="assets/img/info.svg" alt=""></span> البيانات </a>
-                                <a class="dropdown-item" type="#"><span><img src="assets/img/discount.svg" alt=""></span> القسائم </a>
-                                <a class="dropdown-item" href="#"><span><img src="assets/img/money.svg" alt=""></span> التعاملات المالية </a>
-                                <a class="dropdown-item" href="#"><span><img src="assets/img/logout.svg" alt=""></span> تسجيل الخروج </a>
+                                <a class="dropdown-item" href="#"><span><img src="assets/img/info.svg" alt=""></span>
+                                    البيانات </a>
+                                <a class="dropdown-item" href="#"><span><img src="assets/img/discount.svg"
+                                            alt=""></span> القسائم </a>
+                                <a class="dropdown-item" href="#"><span><img src="assets/img/money.svg" alt=""></span>
+                                    التعاملات المالية </a>
+                                <a class="dropdown-item" href="#"><span><img src="assets/img/logout.svg" alt=""></span>
+                                    تسجيل الخروج </a>
                             </div>
                         </div>
 
@@ -85,8 +89,8 @@
                     <div class="col-12">
                         <ul class="nav nav-pills" id="pills-tab" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link ln-h3" id="info-tab" data-toggle="pill" href="#info-tab-content" role="tab"
-                                    aria-controls="info" aria-selected="true">البيانات</a>
+                                <a class="nav-link ln-h3" id="info-tab" data-toggle="pill" href="#info-tab-content"
+                                    role="tab" aria-controls="info" aria-selected="true">البيانات</a>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link active" id="qsimh-tab" data-toggle="pill" href="#qsimh-tab-content"
@@ -193,7 +197,7 @@
                             <div class="qsimh-tab tab-pane fade show active" id="qsimh-tab-content" role="tabpanel"
                                 aria-labelledby="qsimh-tab">
 
-                                <a class="add-qsimh" href="#">اضافة قسيمة</a>
+                                <a class="add-qsimh" href="layouts/add-qsimh.html">اضافة قسيمة</a>
 
                                 <div class="qsimh-table table-responsive">
 
@@ -206,7 +210,8 @@
                                                 <th scope="col">مدينة</th>
                                                 <th scope="col">الحالة</th>
                                                 <th scope="col">الانشاء</th>
-                                                <th scope="col">أمر</th>
+                                                <th scope="col">تعديل</th>
+                                                <th scope="col">المسوقين</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -217,7 +222,71 @@
                                                 <td>الرياض</td>
                                                 <td>نشط</th>
                                                 <td>15/12/2020</th>
-                                                <td><a class="order-btn" href="#">تعليق</a></td>
+                                                <td><a class="order-btn" href="#">تعديل</a></td>
+                                                <td><a type="button" data-toggle="modal" data-target="#exampleModal-1" class="order-btn" href="#">اضافة</a></td>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel"> تفعيل القسيمة للمسوقين</h5>
+                                                                <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="container-fluid">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <div class="row marketer-card">
+                                                                                <div class="col-3 marketer-img">
+                                                                                    <img src="assets/img/marketer.png" alt="">
+                                                                                </div>
+                                                                                <div class="col-9 marketer-name">
+                                                                                    <p>
+                                                                                        علاء السيد حسنين
+                                                                                    </p>
+                                                                                    <a href="#">تفعيل</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <div class="row marketer-card">
+                                                                                <div class="col-3 marketer-img">
+                                                                                    <img src="assets/img/marketer.png" alt="">
+                                                                                </div>
+                                                                                <div class="col-9 marketer-name">
+                                                                                    <p>
+                                                                                        علاء السيد حسنين
+                                                                                    </p>
+                                                                                    <a href="#">تفعيل</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <div class="row marketer-card">
+                                                                                <div class="col-3 marketer-img">
+                                                                                    <img src="assets/img/marketer.png" alt="">
+                                                                                </div>
+                                                                                <div class="col-9 marketer-name">
+                                                                                    <p>
+                                                                                        علاء السيد حسنين
+                                                                                    </p>
+                                                                                    <a href="#">تفعيل</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">اغلاق</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                             </tr>
                                             <tr>
                                                 <th class="qsimh-table-img" scope="row"><img src="assets/img/about-vision.png"></th>
@@ -226,7 +295,71 @@
                                                 <td>الرياض</td>
                                                 <td>نشط</th>
                                                 <td>15/12/2020</th>
-                                                <td><a class="order-btn" href="#">تعليق</a></td>
+                                                <td><a class="order-btn" href="#">تعديل</a></td>
+                                                <td><a type="button" data-toggle="modal" data-target="#exampleModal-2" class="order-btn" href="#">اضافة</a></td>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel"> تفعيل القسيمة للمجمع</h5>
+                                                                <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="container-fluid">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <div class="row marketer-card">
+                                                                                <div class="col-3 marketer-img">
+                                                                                    <img src="assets/img/marketer.png" alt="">
+                                                                                </div>
+                                                                                <div class="col-9 marketer-name">
+                                                                                    <p>
+                                                                                        علاء السيد حسنين
+                                                                                    </p>
+                                                                                    <a href="#">تفعيل</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <div class="row marketer-card">
+                                                                                <div class="col-3 marketer-img">
+                                                                                    <img src="assets/img/marketer.png" alt="">
+                                                                                </div>
+                                                                                <div class="col-9 marketer-name">
+                                                                                    <p>
+                                                                                        علاء السيد حسنين
+                                                                                    </p>
+                                                                                    <a href="#">تفعيل</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <div class="row marketer-card">
+                                                                                <div class="col-3 marketer-img">
+                                                                                    <img src="assets/img/marketer.png" alt="">
+                                                                                </div>
+                                                                                <div class="col-9 marketer-name">
+                                                                                    <p>
+                                                                                        علاء السيد حسنين
+                                                                                    </p>
+                                                                                    <a href="#">تفعيل</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">اغلاق</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                             </tr>
                                             <tr>
                                                 <th class="qsimh-table-img" scope="row"><img src="assets/img/about-mission.png"></th>
@@ -235,7 +368,71 @@
                                                 <td>الرياض</td>
                                                 <td>نشط</th>
                                                 <td>15/12/2020</th>
-                                                <td><a class="order-btn" href="#">تعليق</a></td>
+                                                <td><a class="order-btn" href="#">تعديل</a></td>
+                                                <td><a type="button" data-toggle="modal" data-target="#exampleModal-3" class="order-btn" href="#">اضافة</a></td>
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal-3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                                        <div class="modal-content">
+                                                            <div class="modal-header">
+                                                                <h5 class="modal-title" id="exampleModalLabel"> تفعيل القسيمة للعمال</h5>
+                                                                <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                                                                    <span aria-hidden="true">&times;</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <div class="container-fluid">
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <div class="row marketer-card">
+                                                                                <div class="col-3 marketer-img">
+                                                                                    <img src="assets/img/marketer.png" alt="">
+                                                                                </div>
+                                                                                <div class="col-9 marketer-name">
+                                                                                    <p>
+                                                                                        علاء السيد حسنين
+                                                                                    </p>
+                                                                                    <a href="#">تفعيل</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <div class="row marketer-card">
+                                                                                <div class="col-3 marketer-img">
+                                                                                    <img src="assets/img/marketer.png" alt="">
+                                                                                </div>
+                                                                                <div class="col-9 marketer-name">
+                                                                                    <p>
+                                                                                        علاء السيد حسنين
+                                                                                    </p>
+                                                                                    <a href="#">تفعيل</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12">
+                                                                            <div class="row marketer-card">
+                                                                                <div class="col-3 marketer-img">
+                                                                                    <img src="assets/img/marketer.png" alt="">
+                                                                                </div>
+                                                                                <div class="col-9 marketer-name">
+                                                                                    <p>
+                                                                                        علاء السيد حسنين
+                                                                                    </p>
+                                                                                    <a href="#">تفعيل</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">اغلاق</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                             </tr>
                                         </tbody>
                                     </table>
@@ -253,7 +450,7 @@
                                             <div class="deal-card-img cart"></div>
                                             <div class="deal-card-text">
                                                 <p>اجمالي الطلبات</p>
-                                                <p>5000 ريال</p>
+                                                <p>5000 طلب</p>
                                             </div>
                                         </div>
                                     </div>
@@ -262,8 +459,8 @@
                                         <div class="deal-card blue">
                                             <div class="deal-card-img bag"></div>
                                             <div class="deal-card-text">
-                                                <p>اجمالي الطلبات</p>
-                                                <p>5000 ريال</p>
+                                                <p> الطلبات المفعلة</p>
+                                                <p>300 طلب</p>
                                             </div>
                                         </div>
                                     </div>
@@ -272,8 +469,8 @@
                                         <div class="deal-card gray">
                                             <div class="deal-card-img price"></div>
                                             <div class="deal-card-text">
-                                                <p>اجمالي الطلبات</p>
-                                                <p>5000 ريال</p>
+                                                <p> اجمالي المبيعات </p>
+                                                <p>1000 ريال</p>
                                             </div>
                                         </div>
                                     </div>

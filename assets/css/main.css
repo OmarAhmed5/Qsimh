@@ -3206,6 +3206,46 @@ margin: 0;
   margin-bottom: 20px;
   box-shadow: var(--main-box-shadow);
 }
+.modal-body .marketer-card{
+  position: relative;
+  width: 100%;
+  height: 70px;
+  padding: 5px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px #00000050;
+  background: var(--main-gradiant);
+  overflow: hidden;
+  margin: 10px auto;
+}
+.modal-body .marketer-card .marketer-img{
+  overflow: hidden;
+}
+.modal-body .marketer-card .marketer-img img{
+  width: 100%;
+  height: auto;
+}
+.modal-body .marketer-card .marketer-name p{
+  font-size: 16px;
+  text-align: right;
+  color: #fff;
+  line-height: 60px;
+  margin: 0;
+}
+.modal-body .marketer-card .marketer-name a{
+  position: absolute;
+  bottom: 50%;
+  transform: translateY(50%);
+  left: 10px;
+  font-size: 13px;
+  color: #fff;
+  background: #fff;
+  box-shadow: 0px 0px 5px #00000050;
+  color: var(--main-text-color);
+  padding: 3px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
 @media (max-width:1199px) {
 .add-qsimh {
   width: 180px;
