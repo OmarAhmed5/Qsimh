@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <title>قسيمة | اضافة قسيمة جديدة</title>
 
     <link rel="shortcut icon" href="../assets/img/favicon.svg" type="image/x-icon">
@@ -19,186 +19,137 @@
         <!-- Add Qsimh Page For Companys-->
 
         <div class="container">
-
             <div class="deals-title">
                 <h5>اضافة قسيمة جديدة</h5>
             </div>
-
             <form class="was-validated" action="post">
-
                 <div class="row">
-
                     <div class="col-lg-6">
-
                         <div class='row'>
-
                             <div class="col-lg-12">
-
                                 <div class="box">
                                     <label for="qsimh-name-ar">عنوان القسيمة باللغة العربية</label>
-                                    <input name="qsimh-name-ar" class="form-rtl is-invalid form-control"
-                                        placeholder="مثال : تنظيف الاسنان" type="text" required>
+                                    <input name="qsimh-name-ar" class="form-rtl is-invalid form-control" placeholder="مثال : تنظيف الاسنان" type="text" required>
                                 </div>
-
                                 <div class="box">
                                     <label for="qsimh-name-en">عنوان القسيمة باللغة الانجليزية</label>
-                                    <input name="qsimh-name-en" class="is-invalid form-control"
-                                        placeholder="Example : Cleaning Teeth" type="text" required>
+                                    <input name="qsimh-name-en" class="is-invalid form-control" placeholder="Example : Cleaning Teeth" type="text" required>
                                 </div>
-
                                 <div class="box">
                                     <label for="qsimh-details">وصف القسيمة</label>
-                                    <textarea rows="3" name="qsimh-details" class="form-rtl is-invalid form-control"
-                                        placeholder="اكتب تفاصيل القسيمة هنا.." type="text" required></textarea>
+                                    <textarea rows="3" name="qsimh-details" class="form-rtl is-invalid form-control" placeholder="اكتب تفاصيل القسيمة هنا.." type="text" required></textarea>
                                 </div>
-
                                 <div class="box">
                                     <label for="qsimh-features">مميزات القسيمة</label>
-                                    <textarea rows="3" name="qsimh-features" class="form-rtl is-invalid form-control"
-                                        placeholder="اكتب مميزات القسيمة هنا.." type="text" required></textarea>
+                                    <textarea rows="3" name="qsimh-features" class="form-rtl is-invalid form-control" placeholder="اكتب مميزات القسيمة هنا.." type="text" required></textarea>
                                 </div>
-
                                 <div class="box">
                                     <label for="qsimh-conditions">شروط القسيمة</label>
-                                    <textarea rows="3" name="qsimh-conditions"
-                                        class="area95 form-rtl is-invalid form-control"
-                                        placeholder="اكتب شروط القسيمة هنا.." type="text" required></textarea>
+                                    <textarea rows="3" name="qsimh-conditions" class="area95 form-rtl is-invalid form-control" placeholder="اكتب شروط القسيمة هنا.." type="text" required></textarea>
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                     <div class="col-lg-6">
-
                         <div class='row'>
-
-                            <div class="col-lg-12">
-
+                            <div class="col-lg-4">
                                 <div class="box box-sm-bottom">
                                     <label for="company-city">المدينة</label>
-                                    <input name="company-city" class="form-rtl is-invalid form-control"
-                                        placeholder="مثال : الرياض" type="text" required>
+                                    <input name="company-city" class="form-rtl is-invalid form-control" placeholder="مثال : الرياض" type="text" required>
                                 </div>
-
                             </div>
-
+                            <div class="col-lg-4">
+                                <div class="box box-select-sm">
+                                    <label for="company-city">التصنيف الرئيسي</label>
+                                    <select class="custom-select" required>
+                                        <option disabled selected value="">اختر</option>
+                                        <option value="1"> الاسنان </option>
+                                        <option value="2"> الوجه </option>
+                                        <option value="3"> علاج طبيعي </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="box box-select-sm">
+                                    <label for="company-city">التصنيف الفرعي</label>
+                                    <select class="custom-select" required>
+                                        <option disabled selected value="">اختر</option>
+                                        <option value="1"> الاسنان </option>
+                                        <option value="2"> الوجه </option>
+                                        <option value="3"> علاج طبيعي </option>
+                                    </select>
+                                </div>
+                            </div>
                             <div class="col-lg-6">
-
                                 <div class="box">
-                                    <label for="company-name">السعر قبل التخفيض</label>
-                                    <input name="company-name" class="form-rtl is-invalid form-control"
-                                        placeholder="مثال : علي" type="text" required>
+                                    <label  for="kasema_price">السعر قبل التخفيض</label>
+                                    <input name="price" id="kasema_price" value="{{ old('kasema_price') }}" class="form-rtl is-invalid form-control" type="number" required>
                                 </div>
-
                                 <div class="box">
-                                    <label for="company-number">السعر النهائي</label>
-                                    <input name="company-number" class="is-invalid form-control"
-                                        placeholder="+966123456789" type="number" required>
+                                    <label for="kasema_disc">السعر النهائي</label>
+                                    <input name="disc" id="kasema_disc" value="{{ old('kasema_disc') }}" class="form-control" type="number" disabled>
                                 </div>
-
                                 <div class="box">
                                     <label for="company-address">صورة القسيمة الرئيسية</label>
                                     <div class="custom-file">
-                                        <input name="famous-photo" type="file"
-                                            class="is-invalid form-control custom-file-input" id="customFile" required>
-                                        <label class="custom-file-label" for="customFile">اضغط
-                                            لرفع صورة</label>
+                                        <input name="famous-photo" type="file" class="is-invalid form-control custom-file-input" id="customFile" required>
+                                        <label class="custom-file-label" for="customFile">اضغط لرفع صورة</label>
                                     </div>
                                 </div>
-
                             </div>
-
                             <div class="col-lg-6">
-
                                 <div class="box box-sm-top">
-                                    <label for="company-email">نسبة الخصم</label>
-                                    <input name="company-email" class="is-invalid form-control"
-                                        placeholder="email@gmail.com" type="email" required>
+                                    <label for="kasema_offer">نسبة الخصم</label>
+                                    <input name="offer" id="kasema_offer" value="{{ old('kasema_offer') }}" class="is-invalid form-control" type="number" required>
                                 </div>
-
                                 <div class="box">
-                                    <label for="company-password">المستحقات</label>
-                                    <input name="company-password" minlength="8" class="is-invalid form-control"
-                                        placeholder="********" type="password" required>
+                                    <label for="kasema_vendor_final">المستحقات</label>
+                                    <input name="vendor_final" id="kasema_vendor_final" value="{{ old('kasema_vendor_final') }}" class="form-control" type="number" disabled>
                                 </div>
-
                                 <div class="box">
                                     <label for="company-name">عارض صور القسيمة</label>
                                     <div class="custom-file">
-                                        <input name="famous-photo" type="file"
-                                            class="is-invalid form-control custom-file-input" id="customFile" required>
-                                        <label class="custom-file-label" for="customFile">اضغط
-                                            لرفع صورة</label>
+                                        <input name="famous-photo" type="file" class="is-invalid form-control custom-file-input" id="customFile" required>
+                                        <label class="custom-file-label" for="customFile">اضغط لرفع صورة</label>
                                     </div>
                                 </div>
-
                             </div>
-
                             <div class="col-lg-12">
-
                                 <div class="box box-sm-y">
                                     <label for="company-name">اضافة خيارات للقسيمة</label>
-                                    <input name="company-name" class="form-rtl is-invalid form-control"
-                                        placeholder="عنوان الخيار" type="text">
+                                    <input name="company-name" class="form-rtl is-invalid form-control" placeholder="عنوان الخيار" type="text">
                                 </div>
-
                             </div>
-
                             <div class="col-lg-6">
-
                                 <div class="box">
-                                    <label for="company-name">السعر</label>
-                                    <input name="company-name" class="form-rtl is-invalid form-control"
-                                        placeholder="مثال : علي" type="text">
+                                    <label for="option_price">السعر قبل التخفيض</label>
+                                    <input name="price" value="{{ old('option_price') }}" class="form-rtl form-control option_price" type="number">
                                 </div>
-
                                 <div class="box">
-                                    <label for="company-number">السعر النهائي</label>
-                                    <input name="company-number" class="is-invalid form-control"
-                                        placeholder="+966123456789" type="number">
+                                    <label for="option_disc">السعر النهائي</label>
+                                    <input name="disc" value="{{ old('option_disc') }}" class="form-control option_disc" type="number" disabled>
                                 </div>
-
                             </div>
-
                             <div class="col-lg-6">
-
                                 <div class="box">
-                                    <label for="company-email">نسبة الخصم</label>
-                                    <input name="company-email" class="is-invalid form-control"
-                                        placeholder="email@gmail.com" type="email">
+                                    <label for="option_offer">نسبة الخصم</label>
+                                    <input name="offer" value="{{ old('option_offer') }}" class="form-control option_offer" type="number">
                                 </div>
-
                                 <div class="box">
-                                    <label for="company-password">المستحقات</label>
-                                    <input name="company-password" minlength="8" class="is-invalid form-control"
-                                        placeholder="********" type="password">
+                                    <label for="option_vendor_final">المستحقات</label>
+                                    <input name="final" value="{{ old('option_vendor_final') }}" class="form-control option_vendor_final" type="number" disabled>
                                 </div>
-
                             </div>
-
                         </div>
-
                     </div>
-
                     <div class="col-lg-4"></div>
-
                     <div class="col-lg-4 form-bottom">
-
                         <button type="submit">حفظ</button>
-
                     </div>
-
                     <div class="col-lg-4"></div>
-
                 </div>
-
             </form>
-
         </div>
-
     </main>
 
     <script src="../assets/js/main.js"></script>

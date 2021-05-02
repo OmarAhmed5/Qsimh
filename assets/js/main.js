@@ -237,3 +237,87 @@ $("#kasema_location").on('click', function () {
 
         });
 });
+
+// ! Qsimh Price Calculator
+
+$(function () {
+    $('#kasema_price').on('input', function () {
+        calculatee();
+    });
+    $('#kasema_offer').on('input', function () {
+        calculatee();
+    });
+    function calculatee() {
+        var price = parseInt($('#kasema_price').val());
+        var offer = parseInt($('#kasema_offer').val());
+        var disc = "";
+        var final = "";
+        if (isNaN(price) || isNaN(offer)) {
+            disc = " ";
+            final = " ";
+        } else {
+            disc = (price - ((price * offer) / 100)).toFixed(0);
+            final = (disc - ((disc * 23) / 100)).toFixed(1);
+        }
+        $('#kasema_disc').val(disc);
+        $('#kasema_vendor_final').val(final);
+    }
+});
+
+$(function () {
+    $('.option_price').on('input', function () {
+        calculateee();
+    });
+    $('.option_offer').on('input', function () {
+        calculateee();
+    });
+    function calculateee() {
+        var price = parseInt($('.option_price').val());
+        var offer = parseInt($('.option_offer').val());
+        var disc = "";
+        var final = "";
+        if (isNaN(price) || isNaN(offer)) {
+            disc = " ";
+            final = " ";
+        } else {
+            disc = (price - ((price * offer) / 100)).toFixed(0);
+            final = (disc - ((disc * 23) / 100)).toFixed(1);
+        }
+        $('.option_disc').val(disc);
+        $('.option_vendor_final').val(final);
+    }
+});
+
+// $(function () {
+//     $('.option_price').on('input', function () {
+//         var price = parseInt($(this).val());
+//         var offer = parseInt($(this).siblings('.option_offer').val());
+//         var disc = "";
+//         var final = "";
+//         if (isNaN(price) || isNaN(offer)) {
+//             disc = " ";
+//             final = " ";
+//         } else {
+//             disc = (price - ((price * offer) / 100)).toFixed(0);
+//             final = (disc - ((disc * 23) / 100)).toFixed(1);
+//         }
+//         $(this).siblings('.option_disc').val(disc);
+//         $(this).siblings('.option_final').val(final);
+//     });
+//     $('.option_offer').on('input', function () {
+//         var price = parseInt($(this).siblings('.option_price').val());
+//         var offer = parseInt($(this).val());
+//         var disc = "";
+//         var final = "";
+//         if (isNaN(price) || isNaN(offer)) {
+//             disc = " ";
+//             final = " ";
+//         } else {
+//             disc = (price - ((price * offer) / 100)).toFixed(0);
+//             final = (disc - ((disc * 23) / 100)).toFixed(1);
+//         }
+
+//         $(this).siblings('.option_disc').val(disc);
+//         $(this).siblings('.option_final').val(final);
+//     });
+// });
