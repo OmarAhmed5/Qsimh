@@ -75,6 +75,11 @@ body {
   background-position: right;
   background-attachment: fixed;
 }
+main{
+  background: url(../img/fixed-circles.svg) no-repeat;
+  background-position: right;
+  background-attachment: fixed;
+}
 @media (max-width:992px) {
   body{
     background-size: cover;
@@ -905,11 +910,15 @@ footer .footer-content .footer-bottom .icons a:nth-child(2) {
 /* Mobile App Section */
 
 .home-mobile-app-sec {
+  position: relative;
   margin-top: 70px;
   margin-bottom: 70px;
   background: url(../img/map.png) no-repeat;
   background-size: contain;
   background-position: center;
+}
+.home-mobile-app-sec .svg-path{
+  top: 70px;
 }
 .home-mobile-app-sec .mobile-img img {
   width: 100%;
@@ -1172,7 +1181,7 @@ footer .footer-content .footer-bottom .icons a:nth-child(2) {
   background-position: center;
   height: 500px;
 }
-.about-page .goals-sec .about-path{
+.svg-path{
   position: absolute;
   width: 100%;
 }
@@ -1228,7 +1237,7 @@ footer .footer-content .footer-bottom .icons a:nth-child(2) {
   .about-page .goals-sec {
     margin: 100px 0px;
   }
-  .about-page .goals-sec .about-path{
+  .svg-path{
     display: none;
 }
   .about-page .about-info-sec .about-text h2 {
