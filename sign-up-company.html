@@ -130,9 +130,13 @@
                                             placeholder="email@gmail.com" type="email" required>
                                     </div>
                                     <div class="box">
-                                        <label for="">المدينة</label>
-                                        <input name="company-city" class="form-city is-invalid form-control"
-                                            placeholder="مثال : الرياض" type="text" required>
+                                        <label for="company-city">المدينة</label>
+                                        <select class="form-rtl is-invalid form-control custom-select" required>
+                                            <option disabled selected value="">اختر</option>
+                                            <option value="1"> الرياض </option>
+                                            <option value="2"> المدينة المنورة </option>
+                                            <option value="3"> مكة المكرمة </option>
+                                        </select>
                                     </div>
                                     <div class="box">
                                         <label for="">كلمة المرور</label>

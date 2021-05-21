@@ -84,6 +84,9 @@ main{
   body{
     background-size: cover;
   }
+  main{
+    background: unset;
+  }
 }
 img {
   pointer-events: none;
@@ -1957,7 +1960,7 @@ footer .footer-content .footer-bottom .icons a:nth-child(2) {
   background-size: contain;
   background-position: center;
 }
-.signup-company-page .form-sec .box input {
+.signup-company-page .form-sec .box input ,.signup-company-page .form-sec .box select{
   direction: ltr;
   border: 2px solid var(--third-text-color);
   color: var(--main-text-color);
@@ -1967,6 +1970,10 @@ footer .footer-content .footer-bottom .icons a:nth-child(2) {
   outline: unset;
   width: 100%;
   box-shadow: var(--main-box-shadow);
+}
+.signup-company-page .form-sec .box select{
+  padding-right: 50px !important;
+  direction: rtl;
 }
 .signup-company-page .form-sec .box {
   margin: 20px auto;
@@ -3141,7 +3148,7 @@ margin: 0;
 .company-home .info-tab .box {
   margin: 20px auto;
 }
-.company-home .info-tab .box input {
+.company-home .info-tab .box input,.company-home .info-tab .box select {
   direction: ltr;
   font-size: 16px;
   border: 2px solid var(--third-text-color);
@@ -3151,6 +3158,9 @@ margin: 0;
   outline: unset;
   width: 100%;
   box-shadow: var(--main-box-shadow);
+}
+.company-home .info-tab .box select{
+  padding-right: 50px !important;
 }
 .company-home .info-tab .box label {
   font-weight: bold;
@@ -3232,34 +3242,34 @@ margin: 0;
   background: var(--main-gradiant);
   overflow: hidden;
   margin: 10px auto;
+  display: flex;
+  justify-content: space-around;
 }
 .modal-body .marketer-card .marketer-img{
-  overflow: hidden;
+  width: 70px;
+  height: 60px;
+  place-self: center;
 }
-.modal-body .marketer-card .marketer-img img{
-  width: 100%;
-  height: auto;
-}
-.modal-body .marketer-card .marketer-name p{
+.modal-body .marketer-card .marketer-name{
   font-size: 16px;
-  text-align: right;
+  text-align: center;
   color: #fff;
   line-height: 60px;
   margin: 0;
+  width: 200px;
+  overflow: hidden; 
+  text-overflow: ellipsis;
+  white-space: nowrap;  
 }
-.modal-body .marketer-card .marketer-name a{
-  position: absolute;
-  bottom: 50%;
-  transform: translateY(50%);
-  left: 10px;
+.modal-body .marketer-card .marketer-btn{
   font-size: 13px;
-  color: #fff;
   background: #fff;
   box-shadow: 0px 0px 5px #00000050;
   color: var(--main-text-color);
   padding: 3px 10px;
   border-radius: 5px;
   text-decoration: none;
+  place-self: center;
 }
 
 @media (max-width:1199px) {
@@ -3277,17 +3287,31 @@ margin: 0;
 }
 
 @media (max-width:767px) {
-    .add-qsimh {
-  width: 130px;
-  font-size: 12px;
-}
+  .add-qsimh {
+    width: 130px;
+    font-size: 12px;
+  }
 }
 
 @media (max-width:576px) {
-    .add-qsimh {
-  width: 100px;
-  font-size: 10px;
-}
+  .add-qsimh {
+    width: 100px;
+    font-size: 10px;
+  }
+  .qsimh-tab .modal-dialog-scrollable .modal-body{
+    padding: 0px;
+  }
+  .modal-body .marketer-card .marketer-img{
+    width: 60px;
+    height: 50px;
+  }
+  .modal-body .marketer-card .marketer-name{
+    font-size: 12px;
+    width: auto;
+  }
+  .modal-body .marketer-card .marketer-btn{
+    font-size: 12px;
+  }
 }
 /* Deals Tab */
 
@@ -3729,6 +3753,43 @@ margin: 0;
   margin-top: 60px;
   box-shadow: var(--main-box-shadow);
 }
+.deals-tab .modal-dialog-scrollable .modal-body{
+  padding: 5px 0px 25px 0px;
+}
+.deals-tab .pull-form label{
+  font-size: 13px;
+  display: block;
+  text-align: right;
+  margin: 15px 0px 5px 0px;
+}
+.deals-tab .pull-form input{
+  border: 1px solid #ced4da !important;
+  font-size: 12px;
+  padding-right: 27px !important;
+}
+.deals-tab .req-btn ,.deals-tab .close-btn {
+  border: unset;
+  color: #fff !important;
+  text-decoration: none !important;
+  font-size: 14px;
+  background: var(--main-gradiant);
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin: 0;
+  outline: unset;
+  box-shadow: var(--main-box-shadow);
+  margin: 0px 5px;
+}
+.deals-tab .close-btn{
+  background: var(--second-text-color);
+}
+@media (max-width:576px) {
+.deals-tab .req-btn ,.deals-tab .close-btn {
+  font-size: 12px;
+}
+}
+
+
 @media (max-width:1199px) {
 .famous-home .deal-card .deal-card-img{
   margin-right: 5px;

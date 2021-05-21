@@ -107,7 +107,6 @@
                             <!-- Info -->
                             <div class="info-tab tab-pane fade" id="info-tab-content" role="tabpanel"
                                 aria-labelledby="info-tab">
-
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-lg-2"></div>
@@ -115,29 +114,24 @@
                                             <form class="was-validated" action="post">
                                                 <div class='row'>
                                                     <div class="col-lg-6">
-
                                                         <div class="box">
                                                             <label for="company-name">اسم الشركة</label>
                                                             <input name="company-name"
                                                                 class="form-rtl is-invalid form-control"
                                                                 placeholder="مثال : علي" type="text" required>
                                                         </div>
-
                                                         <div class="box">
                                                             <label for="company-number">رقم الهاتف</label>
                                                             <input name="company-number" class="is-invalid form-control"
                                                                 placeholder="+966123456789" type="number" required>
                                                         </div>
-
                                                         <div class="box">
                                                             <label for="company-address">العنوان</label>
                                                             <input name="company-address"
                                                                 class="form-rtl is-invalid form-control"
                                                                 placeholder="مثال : شارع النصر" type="text" required>
                                                         </div>
-
                                                     </div>
-
                                                     <div class="col-lg-6">
                                                         <div class="box">
                                                             <label for="company-email">البريد الالكتروني</label>
@@ -152,16 +146,16 @@
                                                         </div>
                                                         <div class="box">
                                                             <label for="company-city">المدينة</label>
-                                                            <input name="company-city"
-                                                                class="form-rtl is-invalid form-control"
-                                                                placeholder="مثال : الرياض" type="text" required>
+                                                            <select class="form-rtl is-invalid form-control custom-select" required>
+                                                                <option disabled selected value="">اختر</option>
+                                                                <option value="1"> الرياض </option>
+                                                                <option value="2"> المدينة المنورة </option>
+                                                                <option value="3"> مكة المكرمة </option>
+                                                            </select>
                                                         </div>
-
                                                     </div>
-
                                                     <div class="col-12">
                                                         <div class="box">
-
                                                             <input name="company-location" class="location"
                                                                 type="button" id="kasema_location"
                                                                 value="أضغط لتحديد موقعك" />
@@ -171,18 +165,12 @@
                                                             <input type="hidden" name="kasema_longitude"
                                                                 id="kasema_longitude">
                                                             <input type="hidden" name="kasema_zoom" id="kasema_zoom">
-
                                                         </div>
                                                     </div>
-
                                                     <div class="col-lg-3"></div>
-
                                                     <div class="col-lg-6 form-bottom">
-
                                                         <button type="submit">حفظ</button>
-
                                                     </div>
-
                                                     <div class="col-lg-3"></div>
                                                 </div>
                                             </form>
@@ -190,17 +178,12 @@
                                         <div class="col-lg-2"></div>
                                     </div>
                                 </div>
-
                             </div>
 
                             <!-- Qsimh -->
-                            <div class="qsimh-tab tab-pane fade show active" id="qsimh-tab-content" role="tabpanel"
-                                aria-labelledby="qsimh-tab">
-
+                            <div class="qsimh-tab tab-pane fade show active" id="qsimh-tab-content" role="tabpanel" aria-labelledby="qsimh-tab">
                                 <a class="add-qsimh" href="layouts/add-qsimh.html">اضافة قسيمة</a>
-
                                 <div class="qsimh-table table-responsive">
-
                                     <table class="table table-hover">
                                         <thead class="thead-color">
                                             <tr>
@@ -239,42 +222,30 @@
                                                                 <div class="container-fluid">
                                                                     <div class="row">
                                                                         <div class="col-12">
-                                                                            <div class="row marketer-card">
-                                                                                <div class="col-3 marketer-img">
-                                                                                    <img src="assets/img/marketer.png" alt="">
-                                                                                </div>
-                                                                                <div class="col-9 marketer-name">
-                                                                                    <p>
-                                                                                        علاء السيد حسنين
-                                                                                    </p>
-                                                                                    <a href="#">تفعيل</a>
-                                                                                </div>
+                                                                            <div class="marketer-card">
+                                                                                <img class="marketer-img" src="assets/img/marketer.png" />
+                                                                                <span class="marketer-name">
+                                                                                    علاء السيد حسنين
+                                                                                </span>
+                                                                                <a class="marketer-btn" href="#">تفعيل</a>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-12">
-                                                                            <div class="row marketer-card">
-                                                                                <div class="col-3 marketer-img">
-                                                                                    <img src="assets/img/marketer.png" alt="">
-                                                                                </div>
-                                                                                <div class="col-9 marketer-name">
-                                                                                    <p>
-                                                                                        علاء السيد حسنين
-                                                                                    </p>
-                                                                                    <a href="#">تفعيل</a>
-                                                                                </div>
+                                                                            <div class="marketer-card">
+                                                                                <img class="marketer-img" src="assets/img/marketer.png" />
+                                                                                <span class="marketer-name">
+                                                                                    علاء السيد حسنين
+                                                                                </span>
+                                                                                <a class="marketer-btn" href="#">تفعيل</a>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-12">
-                                                                            <div class="row marketer-card">
-                                                                                <div class="col-3 marketer-img">
-                                                                                    <img src="assets/img/marketer.png" alt="">
-                                                                                </div>
-                                                                                <div class="col-9 marketer-name">
-                                                                                    <p>
-                                                                                        علاء السيد حسنين
-                                                                                    </p>
-                                                                                    <a href="#">تفعيل</a>
-                                                                                </div>
+                                                                            <div class="marketer-card">
+                                                                                <img class="marketer-img" src="assets/img/marketer.png" />
+                                                                                <span class="marketer-name">
+                                                                                    علاء السيد حسنين
+                                                                                </span>
+                                                                                <a class="marketer-btn" href="#">تفعيل</a>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -312,42 +283,30 @@
                                                                 <div class="container-fluid">
                                                                     <div class="row">
                                                                         <div class="col-12">
-                                                                            <div class="row marketer-card">
-                                                                                <div class="col-3 marketer-img">
-                                                                                    <img src="assets/img/marketer.png" alt="">
-                                                                                </div>
-                                                                                <div class="col-9 marketer-name">
-                                                                                    <p>
-                                                                                        علاء السيد حسنين
-                                                                                    </p>
-                                                                                    <a href="#">تفعيل</a>
-                                                                                </div>
+                                                                            <div class="marketer-card">
+                                                                                <img class="marketer-img" src="assets/img/marketer.png" />
+                                                                                <span class="marketer-name">
+                                                                                    علاء السيد حسنين
+                                                                                </span>
+                                                                                <a class="marketer-btn" href="#">تفعيل</a>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-12">
-                                                                            <div class="row marketer-card">
-                                                                                <div class="col-3 marketer-img">
-                                                                                    <img src="assets/img/marketer.png" alt="">
-                                                                                </div>
-                                                                                <div class="col-9 marketer-name">
-                                                                                    <p>
-                                                                                        علاء السيد حسنين
-                                                                                    </p>
-                                                                                    <a href="#">تفعيل</a>
-                                                                                </div>
+                                                                            <div class="marketer-card">
+                                                                                <img class="marketer-img" src="assets/img/marketer.png" />
+                                                                                <span class="marketer-name">
+                                                                                    علاء السيد حسنين
+                                                                                </span>
+                                                                                <a class="marketer-btn" href="#">تفعيل</a>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-12">
-                                                                            <div class="row marketer-card">
-                                                                                <div class="col-3 marketer-img">
-                                                                                    <img src="assets/img/marketer.png" alt="">
-                                                                                </div>
-                                                                                <div class="col-9 marketer-name">
-                                                                                    <p>
-                                                                                        علاء السيد حسنين
-                                                                                    </p>
-                                                                                    <a href="#">تفعيل</a>
-                                                                                </div>
+                                                                            <div class="marketer-card">
+                                                                                <img class="marketer-img" src="assets/img/marketer.png" />
+                                                                                <span class="marketer-name">
+                                                                                    علاء السيد حسنين
+                                                                                </span>
+                                                                                <a class="marketer-btn" href="#">تفعيل</a>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -385,42 +344,30 @@
                                                                 <div class="container-fluid">
                                                                     <div class="row">
                                                                         <div class="col-12">
-                                                                            <div class="row marketer-card">
-                                                                                <div class="col-3 marketer-img">
-                                                                                    <img src="assets/img/marketer.png" alt="">
-                                                                                </div>
-                                                                                <div class="col-9 marketer-name">
-                                                                                    <p>
-                                                                                        علاء السيد حسنين
-                                                                                    </p>
-                                                                                    <a href="#">تفعيل</a>
-                                                                                </div>
+                                                                            <div class="marketer-card">
+                                                                                <img class="marketer-img" src="assets/img/marketer.png" />
+                                                                                <span class="marketer-name">
+                                                                                    علاء السيد حسنين
+                                                                                </span>
+                                                                                <a class="marketer-btn" href="#">تفعيل</a>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-12">
-                                                                            <div class="row marketer-card">
-                                                                                <div class="col-3 marketer-img">
-                                                                                    <img src="assets/img/marketer.png" alt="">
-                                                                                </div>
-                                                                                <div class="col-9 marketer-name">
-                                                                                    <p>
-                                                                                        علاء السيد حسنين
-                                                                                    </p>
-                                                                                    <a href="#">تفعيل</a>
-                                                                                </div>
+                                                                            <div class="marketer-card">
+                                                                                <img class="marketer-img" src="assets/img/marketer.png" />
+                                                                                <span class="marketer-name">
+                                                                                    علاء السيد حسنين
+                                                                                </span>
+                                                                                <a class="marketer-btn" href="#">تفعيل</a>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-12">
-                                                                            <div class="row marketer-card">
-                                                                                <div class="col-3 marketer-img">
-                                                                                    <img src="assets/img/marketer.png" alt="">
-                                                                                </div>
-                                                                                <div class="col-9 marketer-name">
-                                                                                    <p>
-                                                                                        علاء السيد حسنين
-                                                                                    </p>
-                                                                                    <a href="#">تفعيل</a>
-                                                                                </div>
+                                                                            <div class="marketer-card">
+                                                                                <img class="marketer-img" src="assets/img/marketer.png" />
+                                                                                <span class="marketer-name">
+                                                                                    علاء السيد حسنين
+                                                                                </span>
+                                                                                <a class="marketer-btn" href="#">تفعيل</a>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -432,18 +379,14 @@
                                                         </div>
                                                     </div>
                                                 </div>
-
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
-
                             </div>
 
                             <!-- Deals -->
-                            <div class="deals-tab tab-pane fade" id="deals-tab-content" role="tabpanel"
-                                aria-labelledby="deals-tab">
-
+                            <div class="deals-tab tab-pane fade" id="deals-tab-content" role="tabpanel" aria-labelledby="deals-tab">
                                 <div class="row">
                                     <div class="col-md-4">
                                         <div class="deal-card green">
@@ -454,7 +397,6 @@
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="col-md-4">
                                         <div class="deal-card blue">
                                             <div class="deal-card-img bag"></div>
@@ -464,7 +406,6 @@
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="col-md-4">
                                         <div class="deal-card gray">
                                             <div class="deal-card-img price"></div>
@@ -481,7 +422,6 @@
                                 </div>
 
                                 <div class="deals-table table-responsive">
-
                                     <table class="table table-hover">
                                         <thead class="thead-color">
                                             <tr>
@@ -537,15 +477,12 @@
                                         </tbody>
                                     </table>
                                 </div>
-
                             </div>
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </main>
 
     <footer>
