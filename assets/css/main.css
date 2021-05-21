@@ -3767,7 +3767,7 @@ margin: 0;
   font-size: 12px;
   padding-right: 27px !important;
 }
-.deals-tab .req-btn ,.deals-tab .close-btn {
+.deals-tab .req-btn ,.close-btn {
   border: unset;
   color: #fff !important;
   text-decoration: none !important;
@@ -3780,11 +3780,11 @@ margin: 0;
   box-shadow: var(--main-box-shadow);
   margin: 0px 5px;
 }
-.deals-tab .close-btn{
+.close-btn{
   background: var(--second-text-color);
 }
 @media (max-width:576px) {
-.deals-tab .req-btn ,.deals-tab .close-btn {
+.deals-tab .req-btn ,.close-btn {
   font-size: 12px;
 }
 }
