@@ -95,11 +95,8 @@
                                     <input name="disc" id="kasema_disc" value="{{ old('kasema_disc') }}" class="form-control" type="number" disabled>
                                 </div>
                                 <div class="box">
-                                    <label for="company-address">صورة القسيمة الرئيسية</label>
-                                    <div class="custom-file">
-                                        <input name="famous-photo" type="file" class="is-invalid form-control custom-file-input" id="customFile" required>
-                                        <label class="custom-file-label" for="customFile">اضغط لرفع صورة</label>
-                                    </div>
+                                    <label for="qsimh-main-img">صورة القسيمة الرئيسية</label>
+                                    <input type="file" class="qsimh-main-img filepond" name="qsimh-main-img" data-allow-reorder="true" data-max-file-size="3MB" data-max-files="1" required />
                                 </div>
                             </div>
                             <div class="col-lg-6">
@@ -112,11 +109,8 @@
                                     <input name="vendor_final" id="kasema_vendor_final" value="{{ old('kasema_vendor_final') }}" class="form-control" type="number" disabled>
                                 </div>
                                 <div class="box">
-                                    <label for="company-name">عارض صور القسيمة</label>
-                                    <div class="custom-file">
-                                        <input name="famous-photo" type="file" class="is-invalid form-control custom-file-input" id="customFile" required>
-                                        <label class="custom-file-label" for="customFile">اضغط لرفع صورة</label>
-                                    </div>
+                                    <label for="qsimh-slider-img">عارض صور القسيمة</label>
+                                    <input type="file" class="qsimh-slider-img filepond" name="qsimh-slider-img" data-allow-reorder="true" data-max-file-size="3MB" data-max-files="8" multiple required/>
                                 </div>
                             </div>
                             <div class="col-lg-12">
