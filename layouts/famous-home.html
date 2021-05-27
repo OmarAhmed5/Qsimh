@@ -103,11 +103,11 @@
                                                         <div class="box">
                                                             <label for="famous-photo">صورة المستخدم</label>
                                                             <div class="custom-file">
-                                                                <input name="famous-photo" type="file"
-                                                                    class="is-invalid form-control custom-file-input"
-                                                                    id="customFile" required>
-                                                                <label class="custom-file-label" for="customFile">اضغط
-                                                                    لرفع صورة</label>
+                                                                <input name="famous-photo" type="file" class="is-invalid form-control custom-file-input" id="customFile" required>
+                                                                <label class="custom-file-label" for="customFile">اضغط لرفع صورة</label>
+                                                                <div style="overflow-y: auto; height: 100px;">
+                                                                    <img src="../assets/img/billgates.jpg" class="img-fluid">
+                                                                </div>
                                                             </div>
                                                         </div>
 
@@ -228,8 +228,8 @@
                                     </div>
                                 </div>
 
-                                <a type="button" data-toggle="modal" data-target="#reqest-money"  class="pull-money" href="#">طلب سحب الارباح</a>
-
+                                <a type="button" data-toggle="modal" data-target="#reqest-money" class="pull-money" href="#">طلب سحب الارباح</a>
+                                
                                 <!-- Modal -->
                                 <div class="modal fade" id="reqest-money" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
@@ -242,31 +242,35 @@
                                             </div>
                                             <div class="modal-body">
                                                 <div class="container-fluid">
-                                                    <form class="was-validated" action="post">
+                                                    <form class="was-validated pull-form" action="post">
                                                         <div class="row">
-                                                            <div class="col-6">
-                                                                <label for="">البريد الالكتروني</label>
-                                                                <input class="is-invalid form-control" name="email" placeholder="email@gmail.com" type="email" required>
+                                                            <div class="col-md-6">
+                                                                <label for="">الاسم الثلاثي</label>
+                                                                <input class="is-invalid form-control" name="famous_name" placeholder="الاسم"
+                                                                    type="text" required>
                                                             </div>
-                                                            <div class="col-6">
-                                                                <label for="">البريد الالكتروني</label>
-                                                                <input class="is-invalid form-control" name="email" placeholder="email@gmail.com" type="email" required>
+                                                            <div class="col-md-6">
+                                                                <label for="">رقم الأيبان</label>
+                                                                <input class="is-invalid form-control" name="famous_iban" placeholder="الايبان"
+                                                                    type="text" required>
                                                             </div>
-                                                            <div class="col-6">
-                                                                <label for="">البريد الالكتروني</label>
-                                                                <input class="is-invalid form-control" name="email" placeholder="email@gmail.com" type="email" required>
+                                                            <div class="col-md-6">
+                                                                <label for="">اسم البنك</label>
+                                                                <input class="is-invalid form-control" name="famous_bank_name" placeholder="البنك"
+                                                                    type="text" required>
                                                             </div>
-                                                            <div class="col-6">
-                                                                <label for="">البريد الالكتروني</label>
-                                                                <input class="is-invalid form-control" name="email" placeholder="email@gmail.com" type="email" required>
+                                                            <div class="col-md-6">
+                                                                <label for="">المبلغ المراد سحبه</label>
+                                                                <input class="is-invalid form-control" name="famous_money" placeholder="المبلغ"
+                                                                    type="number" required>
                                                             </div>
                                                         </div>
                                                     </form>
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
-                                                <button type="button" class="btn btn-primary">ارسال</button>
-                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">اغلاق</button>
+                                                <button type="button" class="btn req-btn">قدم</button>
+                                                <button type="button" class="btn close-btn" data-dismiss="modal">اغلاق</button>
                                             </div>
                                         </div>
                                     </div>
