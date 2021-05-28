@@ -14,9 +14,9 @@
 <body>
 
     <main class="famous-home">
-
-        <!-- Home Page For Famous -->
-
+    
+        <!-- deals tab For Buy Now Page -->
+    
         <div class="tabs-sec">
             <div class="container">
                 <div class="row">
@@ -31,17 +31,17 @@
                                     role="tab" aria-controls="qsimh" aria-selected="false">القسائم</a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link" id="deals-tab" data-toggle="pill" href="#deals-tab-content"
-                                    role="tab" aria-controls="deals" aria-selected="false">التعاملات المالية</a>
+                                <a class="nav-link" id="deals-tab" data-toggle="pill" href="#deals-tab-content" role="tab"
+                                    aria-controls="deals" aria-selected="false">التعاملات المالية</a>
                             </li>
                         </ul>
-
+    
                         <div class="tab-content" id="pills-tabContent">
-
-                            <!-- Info Tab -->
+    
+                            <!-- Info -->
                             <div class="info-tab tab-pane fade" id="info-tab-content" role="tabpanel"
                                 aria-labelledby="info-tab">
-
+    
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-lg-2"></div>
@@ -49,14 +49,14 @@
                                             <form class="was-validated" action="post">
                                                 <div class='row'>
                                                     <div class="col-lg-6">
-
+    
                                                         <div class="box">
                                                             <label for="famous-name">الاسم</label>
                                                             <input name="famous-name"
                                                                 class="form-rtl is-invalid form-control"
                                                                 placeholder="مثال : علي" type="text" required>
                                                         </div>
-
+    
                                                         <div class="box">
                                                             <label for="famous-name">اسم الشركة</label>
                                                             <input name="famous-name"
@@ -64,13 +64,13 @@
                                                                 placeholder="مثال : شركة الاندلس للرحلات" type="text"
                                                                 required>
                                                         </div>
-
+    
                                                         <div class="box">
                                                             <label for="famous-number">رقم الهاتف</label>
                                                             <input name="famous-number" class="is-invalid form-control"
                                                                 placeholder="+966123456789" type="number" required>
                                                         </div>
-
+    
                                                         <div class="box">
                                                             <label for="famous-commercial-registration">رقم السجل
                                                                 التجاري</label>
@@ -78,9 +78,9 @@
                                                                 class="is-invalid form-control" placeholder="123456"
                                                                 type="number" required>
                                                         </div>
-
+    
                                                     </div>
-
+    
                                                     <div class="col-lg-6">
                                                         <div class="box">
                                                             <label for="famous-email">البريد الالكتروني</label>
@@ -99,28 +99,30 @@
                                                                 class="is-invalid form-control" placeholder="********"
                                                                 type="password" required>
                                                         </div>
-
+    
                                                         <div class="box">
                                                             <label for="famous-photo">صورة المستخدم</label>
                                                             <div class="custom-file">
-                                                                <input name="famous-photo" type="file" class="is-invalid form-control custom-file-input" id="customFile" required>
-                                                                <label class="custom-file-label" for="customFile">اضغط لرفع صورة</label>
-                                                                <div style="overflow-y: auto; height: 100px;">
+                                                                <input class="form-control img-uploader" name="famous_img"
+                                                                    type="file" id="famousImgInp" required>
+                                                                <div class="img-previewer">
+                                                                    <!-- When open the page -->
                                                                     <img src="../assets/img/billgates.jpg" class="img-fluid">
+                                                                    <!-- If Upload a New File -->
+                                                                    <img id='famous-img-upload' class="img-fluid" />
                                                                 </div>
                                                             </div>
                                                         </div>
-
                                                     </div>
-
+    
                                                     <div class="col-lg-3"></div>
-
+    
                                                     <div class="col-lg-6 form-bottom">
-
+    
                                                         <button type="submit">حفظ</button>
-
+    
                                                     </div>
-
+    
                                                     <div class="col-lg-3"></div>
                                                 </div>
                                             </form>
@@ -128,15 +130,15 @@
                                         <div class="col-lg-2"></div>
                                     </div>
                                 </div>
-
+    
                             </div>
-
+    
                             <!-- Qsimh -->
                             <div class="qsimh-tab tab-pane fade show active" id="qsimh-tab-content" role="tabpanel"
                                 aria-labelledby="qsimh-tab">
-
+    
                                 <div class="qsimh-table table-responsive">
-
+    
                                     <table class="table table-hover">
                                         <thead class="thead-color">
                                             <tr>
@@ -179,105 +181,104 @@
                                         </tbody>
                                     </table>
                                 </div>
-
+    
                             </div>
-
+    
                             <!-- Deals -->
                             <div class="deals-tab tab-pane fade" id="deals-tab-content" role="tabpanel"
                                 aria-labelledby="deals-tab">
-
+    
                                 <div class="row">
                                     <div class="col-lg-3">
                                         <div class="deal-card green">
                                             <div class="deal-card-img cart"></div>
                                             <div class="deal-card-text">
                                                 <p>اجمالي الطلبات</p>
-                                                <p>5000 طلب</p>
+                                                <p>5000 ريال</p>
                                             </div>
                                         </div>
                                     </div>
-
+    
                                     <div class="col-lg-3">
                                         <div class="deal-card blue">
                                             <div class="deal-card-img bag"></div>
                                             <div class="deal-card-text">
-                                                <p> الطلبات المفعلة</p>
-                                                <p>5000 طلب</p>
+                                                <p>اجمالي الطلبات</p>
+                                                <p>5000 ريال</p>
                                             </div>
                                         </div>
                                     </div>
-
+    
                                     <div class="col-lg-3">
                                         <div class="deal-card red">
                                             <div class="deal-card-img price"></div>
                                             <div class="deal-card-text">
-                                                <p> الرصيد الحالي </p>
+                                                <p>اجمالي الطلبات</p>
                                                 <p>5000 ريال</p>
                                             </div>
                                         </div>
                                     </div>
-
+    
                                     <div class="col-lg-3">
                                         <div class="deal-card gray">
                                             <div class="deal-card-img money-bag"></div>
                                             <div class="deal-card-text">
-                                                <p>اجمالي الارباح</p>
+                                                <p>اجمالي الطلبات</p>
                                                 <p>5000 ريال</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-
-                                <a type="button" data-toggle="modal" data-target="#reqest-money" class="pull-money" href="#">طلب سحب الارباح</a>
-                                
-                                <!-- Modal -->
-                                <div class="modal fade" id="reqest-money" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title" id="exampleModalLabel">طلب سحب الاموال</h5>
-                                                <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <div class="container-fluid">
-                                                    <form class="was-validated pull-form" action="post">
-                                                        <div class="row">
-                                                            <div class="col-md-6">
-                                                                <label for="">الاسم الثلاثي</label>
-                                                                <input class="is-invalid form-control" name="famous_name" placeholder="الاسم"
-                                                                    type="text" required>
+    
+                                <a class="pull-money" href="pull-money.html">طلب سحب الارباح</a>
+    
+                                <!-- ! Modal -->
+                                <!-- <a type="button" data-toggle="modal" data-target="#reqest-money" class="pull-money" href="#">طلب سحب الارباح</a> -->
+    
+                                <!-- <div class="modal fade" id="reqest-money" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title" id="exampleModalLabel">طلب سحب الاموال</h5>
+                                                    <button type="button" class="close p-0 m-0" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="container-fluid">
+                                                        <form class="was-validated pull-form" action="post">
+                                                            <div class="row">
+                                                                <div class="col-md-6">
+                                                                    <label for="">الاسم الثلاثي</label>
+                                                                    <input class="is-invalid form-control" name="famous_name" placeholder="الاسم" type="text" required>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label for="">رقم الأيبان</label>
+                                                                    <input class="is-invalid form-control" name="famous_iban" placeholder="الايبان" type="text" required>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label for="">اسم البنك</label>
+                                                                    <input class="is-invalid form-control" name="famous_bank_name" placeholder="البنك" type="text" required>
+                                                                </div>
+                                                                <div class="col-md-6">
+                                                                    <label for="">المبلغ المراد سحبه</label>
+                                                                    <input class="is-invalid form-control" name="famous_money" placeholder="المبلغ" type="number" required>
+                                                                </div>
                                                             </div>
-                                                            <div class="col-md-6">
-                                                                <label for="">رقم الأيبان</label>
-                                                                <input class="is-invalid form-control" name="famous_iban" placeholder="الايبان"
-                                                                    type="text" required>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <label for="">اسم البنك</label>
-                                                                <input class="is-invalid form-control" name="famous_bank_name" placeholder="البنك"
-                                                                    type="text" required>
-                                                            </div>
-                                                            <div class="col-md-6">
-                                                                <label for="">المبلغ المراد سحبه</label>
-                                                                <input class="is-invalid form-control" name="famous_money" placeholder="المبلغ"
-                                                                    type="number" required>
-                                                            </div>
-                                                        </div>
-                                                    </form>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn req-btn">قدم</button>
+                                                    <button type="button" class="btn close-btn" data-dismiss="modal">اغلاق</button>
                                                 </div>
                                             </div>
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn req-btn">قدم</button>
-                                                <button type="button" class="btn close-btn" data-dismiss="modal">اغلاق</button>
-                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-
+                                    </div> -->
+                                <!-- ! Modal ! -->
+    
                                 <div class="deals-table table-responsive">
-
+    
                                     <table class="table table-hover">
                                         <thead class="thead-color">
                                             <tr>
@@ -309,15 +310,15 @@
                                         </tbody>
                                     </table>
                                 </div>
-
+    
                             </div>
-
+    
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
+    
     </main>
 
     <script src="../assets/js/main.js"></script>

@@ -2961,6 +2961,14 @@ margin: 0;
   height: unset !important;
   padding-right: 35px !important;
 }
+.img-uploader{
+    height: 46px !important;
+    padding: 2px 35px 2px 2px !important;
+}
+.img-previewer{
+  height: 100px; 
+  overflow: auto;
+}
 
 @media (max-width: 992px) {
   .customer-home .info-tab {
@@ -3496,18 +3504,18 @@ margin: 0;
 .add-qsimh-page {
   margin: 50px 0px;
 }
-.add-qsimh-page .container{
+.add-qsimh-page .container,.rules-sec .container .col-12{
   position: relative;
 }
-.add-qsimh-page .back{
+.back{
   position: absolute;
   left: 40px;
-  color: var(--main-text-color);
+  color: var(--main-text-color) !important;
   text-decoration: unset;
   font-weight: bold;
   font-size: 20px;
 }
-.add-qsimh-page .back::after{
+.back::after{
   font-family: "Font Awesome 5 Free";
   content: "\f30a";
   font-weight: 900;
@@ -3517,7 +3525,7 @@ margin: 0;
   font-size: 30px;
   transition: all ease-in-out 0.3s;
 }
-.add-qsimh-page .back:hover.back::after{
+.back:hover.back::after{
   right: 50px;
 }
 .add-qsimh-page .deals-title h5{
@@ -3951,7 +3959,6 @@ margin: 0;
     font-size: 12px;
   }
 }
-
 .order-btn{
   width: 100%;
   display: block;
@@ -3963,6 +3970,36 @@ margin: 0;
 @media (max-width:992px) {
 .order-btn{
   padding-right: 5px;
-  padding-left: 5px;
+  padding-left: 5px;}
 }
+
+.pull-money-page .title-sec h4 {
+  font-size: 48px;
+}
+.red-notify{
+  font-size: 12px;
+  color: #8b0000;
+}
+@media (max-width: 1199px){
+  .pull-money-page .form-sec .box label{
+    font-size: 14px;
+  }
+  .red-notify{
+    font-size: 10px;
+  }
+}
+@media (max-width: 992px){
+  .box-top{
+    margin-top: 0 !important;
+  }
+}
+@media (max-width: 767px){
+.pull-money-page .title-sec h4 {
+    font-size: 35px
+  }
+}
+@media (max-width: 576px){
+.pull-money-page .title-sec h4 {
+    font-size: 21px
+  }
 }
