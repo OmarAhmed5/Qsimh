@@ -3607,11 +3607,11 @@ margin: 0;
   box-shadow: var(--main-box-shadow);
 }
 .add-qsimh-page .box textarea{
-  height: 110px !important;
+  height: 135px !important;
 }
 @media (max-width:1199px) {
  .add-qsimh-page .box textarea{
-  height: 108px !important;
+  height: 133px !important;
 } 
 }
 @media (max-width: 992px) {

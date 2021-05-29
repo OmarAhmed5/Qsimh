@@ -117,7 +117,7 @@ $('.pagination li a').click(function () {
 
 // ! Short List
 
-$('.shortlist-sec .list-btn').on('click', function (){
+$('.shortlist-sec .list-btn').on('click', function () {
     $(this).parent('.shortlist-sec').toggleClass('is-visible');
 
     if ($(this).parent('.shortlist-sec').hasClass('is-visible')) {
@@ -139,8 +139,8 @@ $('.shortlist-sec .list-btn').on('click', function (){
 
         $(this).parent('.shortlist-sec').animate({
 
-            left : -150
-            
+            left: -150
+
         }, 100);
 
     }
@@ -309,15 +309,62 @@ $(document).ready(function () {
         if (input.files && input.files[0]) {
             var reader = new FileReader();
             reader.onload = function (e) {
-    $('#img-upload').attr('src', e.target.result);
+                $('#img-upload').attr('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
         }
     }
     $("#imgInp").change(function () {
-    readURL(this);
+        readURL(this);
     });
 });
+
+// Add Qsimh Multi Pic Uploader
+var uploadedDocumentMap = {};
+Dropzone.options.imageUpload = {
+    maxFilesize: 2,
+    acceptedFiles: ".jpeg,.jpg,.png,.gif",
+    paramName: 'kasemaSlider',
+    Type: 'POST',
+    url: '{{ url("vproducts/newProduct/storeSlider") }}',
+    addRemoveLinks: true,
+    uploadMultiple: true,
+    parallelUploads: 1,
+    headers: {
+        'X-CSRF-TOKEN': "{{ csrf_token() }}"
+    },
+    success: function (file, response) {
+        console.log(response.name);
+        $('form').append('<input type="hidden" name="document[]" value="' + response
+            .name + '">')
+        uploadedDocumentMap[file.name] = response.name
+    },
+    removedfile: function (file) {
+        file.previewElement.remove()
+        var name = ''
+        if (typeof file.file_name !== 'undefined') {
+            name = file.file_name
+        } else {
+            name = uploadedDocumentMap[file.name]
+        }
+        $('form').find('input[name="document[]"][value="' + name + '"]').remove();
+    }
+    // init: function () {
+    // @if (isset($project) && $project -> document)
+    // var files = {
+    // !!json_encode($project -> document)!!
+    // }
+    // for(var i in files) {
+    // var file = files[i]
+    // this.options.addedfile.call(this, file)
+    // file.previewElement.classList.add('dz-complete')
+    // $('form').append('<input type="hidden" name="document[]" value="' + file
+    // .file_name + '">')
+    // }
+    // @endif
+    // },
+    // };
+}
 
 // Famous Page
 $(document).ready(function () {
@@ -325,12 +372,12 @@ $(document).ready(function () {
         if (input.files && input.files[0]) {
             var reader = new FileReader();
             reader.onload = function (e) {
-    $('#famous-img-upload').attr('src', e.target.result);
+                $('#famous-img-upload').attr('src', e.target.result);
             }
             reader.readAsDataURL(input.files[0]);
         }
     }
     $("#famousImgInp").change(function () {
-    readURL(this);
+        readURL(this);
     });
 });
