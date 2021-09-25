@@ -381,3 +381,20 @@ $(document).ready(function () {
         readURL(this);
     });
 });
+
+
+$(document).ready(function () {
+    $(function () {
+        $('[data-toggle="popover"]').popover()
+    });
+    $('[data-toggle="popover"]').popover().click(function () {
+        setTimeout(function () {
+            $('[data-toggle="popover"]').popover('hide');
+        }, 1000);
+    });
+});
+
+ $(".aquad-card button").click(function() {
+    var $text = this.innerHTML;
+    navigator.clipboard.writeText($text);
+});
